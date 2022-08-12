@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+<body>
+    @@include('html/header.html')
+    <main>
+        <section class="main-banner">
+            <div class="container">
+                <div class="main-banner__upheading">Диклофенак 75 мг и Орфенадрин 30 мг</div>
+                <div class="main-banner__heading">Неодолпассе</div>
+                <div class="main-banner__subheading">ЛЕГКАЯ ПОМОЩЬ В ЛЕЧЕНИИ БОЛИ</div>
+                <div class="main-banner__btns">
+                    <a href="#" class="btn main-banner__btn blue-btn">Подробнее</a>
+                    <a href="#" class="btn main-banner__btn transparent-btn">Исследование</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="indications">
+            <div class="container">
+                <div class="indications__heading">Показания к применению</div>
+                <div class="indications__blocks">
+                    <div class="indication">
+                        <div class="indication__number">1</div>
+                        <div class="indication__text">
+                            <div class="indication__heading">Острый вертеброгенный болевой синдром</div>
+                            <div class="indication__desc">Кратковременное лечение болевого синдрома </div>
+                        </div>
+                    </div>
+                    <div class="indication">
+                        <div class="indication__number">2</div>
+                        <div class="indication__text">
+                            <div class="indication__heading">Корешковые боли</div>
+                            <div class="indication__desc">Кратковременное лечение болевого синдрома</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indications__blocks">
+                    <div class="indication">
+                        <div class="indication__number">3</div>
+                        <div class="indication__text">
+                            <div class="indication__heading">Вертеброгенные боли</div>
+                            <div class="indication__desc">Кратковременное лечение болевого синдрома </div>
+                        </div>
+                    </div>
+                    <div class="indication">
+                        <div class="indication__number">4</div>
+                        <div class="indication__text">
+                            <div class="indication__heading">Постоперационный болевой синдром</div>
+                            <div class="indication__desc">Кратковременное лечение болевого синдрома </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="release">
+            <div class="container">.
+                <img src="@img/flask.png" alt="препарат 3D">
+                <div class="release-block">
+                    <div class="release__heading">Форма выпуска</div>
+                    <div class="release__subheading">Раствор для инфузий диклофенак 75 мг и орфенадрин 30 мг</div>
+                    <div class="release-points">
+                        <div class="release-point">
+                            <img src="@img/blue-checkmark.svg" alt="" class="release-point__img">
+                            <div class="release-point__text">
+                                По 250 мл препарата в стеклянных флаконах (стекло типа II по Евр. Фарм.)
+                            </div>
+                        </div>
+                        <div class="release-point">
+                            <img src="@img/blue-checkmark.svg" alt="" class="release-point__img">
+                            <div class="release-point__text">
+                                С нанесением риски (одной или нескольких) методом литья или без, укупоренных резиновыми
+                                пробками и обкатанных алюминиевыми колпачками с пластиковыми крышками для контроля
+                                первого вскрытия.
+                            </div>
+                        </div>
+                        <div class="release-point">
+                            <img src="@img/blue-checkmark.svg" alt="" class="release-point__img">
+                            <div class="release-point__text">
+                                5 флаконов с держателями или без, вместе с инструкцией по применению помещают в коробку
+                                картонную.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mechanics">
+            <div class="mechanics__heading">Механизм действия</div>
+            <img src="@img/mechanics-img.jpg" alt="" class="mechanics-img" />
+        </section>
+
+        <section class="use">
+            <div class="use__heading">Медицинское применение</div>
+            <div class="container">
+                @@include('html/_use.html')
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__heading">О компании Фрезениус Каби</div>
+            <div class="container">
+                <div class="about__text">
+                    <div class="about__text_l">
+                        Фрезениус Каби является частью немецкого концерна Фрезениус — мирового лидера в создании средств для
+                        оказания медицинской помощи больным в критических состояниях как в госпитальных, так и в домашних
+                        условиях.
+                        Основными направлениями деятельности Фрезениус Каби являются разработка и производство препаратов и
+                        технологий для инфузионной терапии, парентерального и энтерального питания, химиотерапевтических
+                        препаратов и других препаратов для внутривенного введения, а также их медико-технического
+                        обеспечения.
+                    </div>
+                    <div class="about__text_r">
+                        Являясь неотъемлемой частью концерна Фрезениус, Фрезениус Каби занимает лидирующую позицию в Европе
+                        и в мире по производству и продажам препаратов для восполнения объема циркулирующей крови и
+                        клинического питания.
+                        По данным компании IMS Фрезениус Каби является крупнейшим в мире производителем препаратов для
+                        внутривенного введения в целом.
+                    </div>
+                </div>
+                <div class="center">
+                    <a href="#" class="about__btn">На сайт компании</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

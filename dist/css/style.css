@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.use-block__text, .about__text, .release-point__text {
+  font-size: 20px;
+  line-height: 28.8px;
+}
+
+.use__heading, .mechanics__heading, .about__heading, .release__heading, .indications__heading {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.use-block__heading, .release__subheading {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.about__btn, .transparent-btn, .about__btn, .blue-btn {
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__btn, .blue-btn {
+  background-color: #0063BE;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.about__btn:hover, .blue-btn:hover {
+  background-color: #2596be;
+}
+.about__btn:focus, .blue-btn:focus {
+  background-color: #004584;
+  color: #fff;
+  border: 2px solid #004584;
+}
+.about__btn:focus:hover, .blue-btn:focus:hover {
+  background-color: #004584;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  color: #0063BE;
+  border: 2px solid #0063BE;
+}
+.transparent-btn:hover {
+  background-color: #0063BE;
+  color: #fff;
+}
+.transparent-btn:focus {
+  background-color: #004584;
+  color: #fff;
+  border: 2px solid #004584;
+}
+.transparent-btn:focus:hover {
+  background-color: #004584;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  box-shadow: 0px -21px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+header .container {
+  display: flex;
+}
+header .header-logo {
+  margin-right: 44px;
+}
+
+nav {
+  text-align: center;
+}
+nav .header-menu {
+  padding: 0;
+  padding: 35px 0px 45px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 20px solid #0063BE;
+  min-width: 877px;
+  margin: 0 auto;
+}
+nav .header-menu li a {
+  color: #00203d;
+}
+
+.container {
+  max-width: 1228px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Первый экран */
+.main-banner {
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  height: 105vh;
+}
+.main-banner__upheading {
+  color: #0063BE;
+  margin-bottom: 15px;
+}
+.main-banner__heading {
+  color: #0063BE;
+  font-size: 96px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.main-banner__subheading {
+  font-weight: 600;
+  font-size: 27px;
+  color: #2b2f32;
+  margin-bottom: 50px;
+}
+.main-banner .blue-btn,
+.main-banner .transparent-btn {
+  padding: 17px 57px;
+}
+.main-banner .blue-btn {
+  margin-right: 30px;
+}
+
+/* Конец первого экрана */
+/* Показания к применению */
+.indications {
+  margin-top: 50px;
+  background-image: url("../img/balloon-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.indications__heading {
+  color: #0063BE;
+  margin-bottom: 100px;
+}
+.indications__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.indications__blocks:last-child {
+  margin-top: 108px;
+}
+
+.indication {
+  display: flex;
+  align-items: flex-start;
+  max-width: 450px;
+}
+.indication__number {
+  font-size: 150px;
+  color: #0063BE;
+  font-weight: 700;
+  line-height: 0.777;
+  margin-right: 15px;
+}
+.indication__heading {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.indication:first-child {
+  margin-right: 48px;
+}
+
+/* Конец показаний к применению */
+/* Форма выпуска */
+.release {
+  background-image: url("../img/grey-rec.svg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 64px;
+  padding-top: 250px;
+}
+.release__heading {
+  color: #0063BE;
+  margin-bottom: 25px;
+}
+.release__subheading {
+  color: #2b2f32;
+}
+.release .container {
+  display: flex;
+}
+
+.release-points {
+  margin-top: 70px;
+}
+
+.release-point {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  max-width: 530px;
+}
+.release-point__img {
+  margin-right: 16px;
+}
+/* Конец формы выпуска */
+/* О компании */
+.about {
+  margin-top: 130px;
+}
+.about__heading {
+  text-align: center;
+  color: #0063BE;
+}
+.about__text {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__text_l, .about__text_r {
+  max-width: 560px;
+}
+.about__btn {
+  padding: 17px 68px;
+  max-width: 315px;
+  margin: 70px auto 0px auto;
+}
+
+/* Конец стилей О компании */
+/* Видео блок механики */
+.mechanics {
+  position: relative;
+}
+.mechanics__heading {
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.mechanics::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(180deg, rgba(245, 250, 254, 0.7) 0%, rgba(0, 99, 190, 0.7) 60.94%);
+  opacity: 0.5;
+}
+.mechanics::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #0063BE;
+  transition: all 0.1s;
+  background-image: url("../img/play-polygon.svg");
+  background-position: 55.5% center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.mechanics-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Видео блок механики конец */
+/* Медицинское применение */
+.use {
+  background-image: url("../img/blue-rec.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding-bottom: 400px;
+}
+.use__heading {
+  text-align: center;
+  margin-bottom: 123px;
+  padding-top: 114px;
+}
+.use__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.use-block {
+  max-width: 490px;
+  height: 288px;
+}
+.use-block__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.use-block__more {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.use-block__more img {
+  margin-left: 11px;
+}
+.use-block__text {
+  margin-top: 45px;
+}
+
+/* Конец стилей Медицинское применение */
+/* Стили футера */
+footer {
+  padding: 105px 0px 75px 0px;
+  background-color: #0063BE;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top__links ul {
+  display: flex;
+}
+.footer-top__link {
+  color: #ffffff;
+  margin-right: 38px;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  color: #ffffff;
+  line-height: 23.04px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom__up {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .up-img {
+  padding: 33px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 24px;
+  width: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* Конец стилей футера */
