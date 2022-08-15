@@ -8,12 +8,18 @@ $focus: #004584;
 $headBlack: #2b2f32;
 $textBlack: #00203d;
 
+%akrobat {
+    font-family: 'Akrobat';
+    font-style: normal;
+}
+
 %textBasic {
     font-size: 20px;
     line-height: 28.8px;
 }
 
 %heading {
+    @extend %akrobat;
     font-size: 64px;
     font-weight: 600;
 }
@@ -78,6 +84,7 @@ $textBlack: #00203d;
 html {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -125,19 +132,11 @@ nav {
 }
 
 .container {
-    max-width: 1228px;
+    max-width: 1440px;
     margin: 0 auto;
 
-    @media (max-width: 1250px) {
+    @media (max-width: 1450px) {
         padding: 0px 26px;
-    }
-
-    @media (min-width: 1600px) {
-        max-width: 1540px;
-    }
-
-    @media (min-width: 2100px) {
-        max-width: 2000px;
     }
 }
 
@@ -168,6 +167,7 @@ nav {
     }
     
     &__heading {
+        @extend %akrobat;
         color: $default;
         font-size: 96px;
         font-weight: 600;
@@ -175,6 +175,7 @@ nav {
     }
 
     &__subheading {
+        @extend %akrobat;
         font-weight: 600;
         font-size: 27px;
         color: $headBlack;
@@ -220,17 +221,19 @@ nav {
 .indication {
     display: flex;
     align-items: flex-start;
-    max-width: 450px;
+    max-width: 420px;
 
     &__number {
+        @extend %akrobat;
         font-size: 150px;
         color: $default;
         font-weight: 700;
         line-height: 0.777;
-        margin-right: 15px;
+        margin-right: 33px;
     }
 
     &__heading {
+        @extend %akrobat;
         font-size: 27px;
         font-weight: 700;
         margin-bottom: 15px;
@@ -259,6 +262,7 @@ nav {
 
     &__subheading {
         @extend %subheading;
+        @extend %akrobat;
         color: $headBlack;
     }
 
@@ -414,6 +418,7 @@ nav {
     }
 
     &__heading {
+        @extend %akrobat;
         @extend %subheading;
     }
 

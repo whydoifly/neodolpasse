@@ -39,7 +39,7 @@ $textBlack: #00203d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 735px;
+    min-height: 635px;
 
     &__img {
         margin-bottom: 45px;
@@ -47,6 +47,7 @@ $textBlack: #00203d;
     }
 
     &__desc {
+        @extend %akrobat;
         margin-bottom: 25px;
         font-size: 25px;
         font-weight: 700;
@@ -76,6 +77,10 @@ $textBlack: #00203d;
         transform: translate(-50%,-50%);
         font-weight: 800;
         z-index: 5;
+    }
+
+    &__authors {
+        @extend %akrobat;
     }
 
     &__desc {

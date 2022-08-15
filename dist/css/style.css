@@ -1,29 +1,60 @@
 @charset "UTF-8";
-
 @font-face {
-  font-family: OpenSans;
+  font-family: Akrobat;
   font-display: swap;
-  src: url("../fonts/OpenSans-Italic.ttf") format("ttf"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  src: url("../fonts/Akrobat-Black.ttf") format("ttf"), url("../fonts/Akrobat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akrobat;
+  font-display: swap;
+  src: url("../fonts/Akrobat-ExtraLight.ttf") format("ttf"), url("../fonts/Akrobat-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akrobat;
+  font-display: swap;
+  src: url("../fonts/Akrobat-Light.ttf") format("ttf"), url("../fonts/Akrobat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akrobat;
+  font-display: swap;
+  src: url("../fonts/Akrobat-ExtraBold.ttf") format("ttf"), url("../fonts/Akrobat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akrobat;
+  font-display: swap;
+  src: url("../fonts/Akrobat-Regular.ttf") format("ttf"), url("../fonts/Akrobat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: OpenSans;
+  font-family: Akrobat;
   font-display: swap;
-  src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Akrobat-Bold.ttf") format("ttf"), url("../fonts/Akrobat-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: OpenSans;
+  font-family: Akrobat;
   font-display: swap;
-  src: url("../fonts/OpenSans-LightItalic.ttf") format("ttf"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Akrobat-SemiBold.ttf") format("ttf"), url("../fonts/Akrobat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
-
+@font-face {
+  font-family: Akrobat;
+  font-display: swap;
+  src: url("../fonts/Akrobat-Thin.ttf") format("ttf"), url("../fonts/Akrobat-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -31,23 +62,20 @@
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: OpenSans;
   font-display: swap;
-  src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf"), url("../fonts/OpenSans-MediumItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: OpenSans;
   font-display: swap;
-  src: url("../fonts/OpenSans-Medium.ttf") format("ttf"), url("../fonts/OpenSans-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/OpenSans-Italic.ttf") format("ttf"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -55,7 +83,27 @@
   font-weight: 300;
   font-style: normal;
 }
-
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.ttf") format("ttf"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Medium.ttf") format("ttf"), url("../fonts/OpenSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf"), url("../fonts/OpenSans-MediumItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -63,7 +111,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -71,7 +118,6 @@
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -79,9 +125,13 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .slider-section {
   margin-top: 130px;
+}
+@media (max-width: 768px) {
+  .slider-section {
+    margin-top: 50px;
+  }
 }
 
 .swiper {
@@ -95,17 +145,14 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .slider-top__heading {
   color: #0063BE;
 }
-
 .slider-top__more {
   display: flex;
   align-items: center;
   color: #00203d;
 }
-
 .slider-top__more img {
   margin-left: 20px;
 }
@@ -114,20 +161,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 735px;
+  min-height: 635px;
 }
-
 .article-slide__img {
   margin-bottom: 45px;
   width: 100%;
 }
-
 .article-slide__desc {
   margin-bottom: 25px;
   font-size: 25px;
   font-weight: 700;
 }
-
 .article-slide__button {
   padding: 18px 60px;
 }
@@ -136,15 +180,12 @@
   position: relative;
   color: #ffffff;
 }
-
 .research-slide__img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 .research-slide__info {
   position: absolute;
   left: 41%;
@@ -153,13 +194,11 @@
   font-weight: 800;
   z-index: 5;
 }
-
 .research-slide__desc {
   margin-top: 44px;
   font-weight: 600;
   font-size: 20px;
 }
-
 .research-slide::after {
   position: absolute;
   content: "";
@@ -188,7 +227,6 @@
   z-index: 10;
   cursor: pointer;
 }
-
 .lecture-slide__desc {
   position: absolute;
   left: 50%;
@@ -199,34 +237,27 @@
   min-width: 420px;
 }
 
-.use-block__text,
-.about__text,
-.release-point__text {
+.use-block__heading, .release__subheading, .indication__heading, .indication__number, .main-banner__subheading, .main-banner__heading, .use__heading, .mechanics__heading, .about__heading, .release__heading, .indications__heading, .slider-top__heading, .article-slide__desc, .research-slide__authors {
+  font-family: "Akrobat";
+  font-style: normal;
+}
+
+.use-block__text, .about__text, .release-point__text {
   font-size: 20px;
   line-height: 28.8px;
 }
 
-.use__heading,
-.mechanics__heading,
-.about__heading,
-.release__heading,
-.indications__heading,
-.slider-top__heading {
+.use__heading, .mechanics__heading, .about__heading, .release__heading, .indications__heading, .slider-top__heading {
   font-size: 64px;
   font-weight: 600;
 }
 
-.use-block__heading,
-.release__subheading {
+.use-block__heading, .release__subheading {
   font-size: 27px;
   font-weight: 700;
 }
 
-.about__btn,
-.transparent-btn,
-.article-slide__button,
-.about__btn,
-.blue-btn {
+.about__btn, .transparent-btn, .article-slide__button, .about__btn, .blue-btn {
   font-size: 20px;
   text-decoration: none;
   border-radius: 10px;
@@ -235,52 +266,38 @@
   cursor: pointer;
 }
 
-.about__btn,
-.blue-btn {
+.about__btn, .blue-btn {
   background-color: #0063BE;
   color: #fff;
   border: 2px solid transparent;
 }
-
-.about__btn:hover,
-.blue-btn:hover {
+.about__btn:hover, .blue-btn:hover {
   background-color: #2596be;
 }
-
-.about__btn:focus,
-.blue-btn:focus {
+.about__btn:focus, .blue-btn:focus {
   background-color: #004584;
   color: #fff;
   border: 2px solid #004584;
 }
-
-.about__btn:focus:hover,
-.blue-btn:focus:hover {
+.about__btn:focus:hover, .blue-btn:focus:hover {
   background-color: #004584;
 }
 
-.transparent-btn,
-.article-slide__button {
+.transparent-btn, .article-slide__button {
   background-color: transparent;
   color: #0063BE;
   border: 2px solid #0063BE;
 }
-
-.transparent-btn:hover,
-.article-slide__button:hover {
+.transparent-btn:hover, .article-slide__button:hover {
   background-color: #0063BE;
   color: #fff;
 }
-
-.transparent-btn:focus,
-.article-slide__button:focus {
+.transparent-btn:focus, .article-slide__button:focus {
   background-color: #004584;
   color: #fff;
   border: 2px solid #004584;
 }
-
-.transparent-btn:focus:hover,
-.article-slide__button:focus:hover {
+.transparent-btn:focus:hover, .article-slide__button:focus:hover {
   background-color: #004584;
 }
 
@@ -293,6 +310,7 @@
 html {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -311,11 +329,9 @@ header {
   box-shadow: 0px -21px 60px rgba(0, 0, 0, 0.25);
   position: relative;
 }
-
 header .container {
   display: flex;
 }
-
 header .header-logo {
   margin-right: 44px;
 }
@@ -325,7 +341,6 @@ nav {
   min-width: 877px;
   margin: 0 auto;
 }
-
 nav .header-menu {
   padding: 0;
   padding: 35px 0px 45px 0px;
@@ -333,14 +348,18 @@ nav .header-menu {
   justify-content: space-evenly;
   border-top: 20px solid #0063BE;
 }
-
 nav .header-menu li a {
   color: #00203d;
 }
 
 .container {
-  max-width: 1228px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+@media (max-width: 1450px) {
+  .container {
+    padding: 0px 26px;
+  }
 }
 
 .center {
@@ -348,69 +367,54 @@ nav .header-menu li a {
 }
 
 /* Первый экран */
-
-.no-webp .main-banner{
-  background-image: url("../img/main-bg.jpg"); }
-
 .main-banner {
+  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 170px;
   height: 105vh;
 }
-
 .main-banner__upheading {
   color: #0063BE;
   margin-bottom: 15px;
 }
-
 .main-banner__heading {
   color: #0063BE;
   font-size: 96px;
   font-weight: 600;
   margin-bottom: 25px;
 }
-
 .main-banner__subheading {
   font-weight: 600;
   font-size: 27px;
   color: #2b2f32;
   margin-bottom: 50px;
 }
-
 .main-banner .blue-btn,
 .main-banner .transparent-btn {
   padding: 17px 57px;
 }
-
 .main-banner .blue-btn {
   margin-right: 30px;
 }
 
 /* Конец первого экрана */
-
 /* Показания к применению */
-
-.no-webp .indications{
-  background-image: url("../img/balloon-bg.png"); }
-
 .indications {
   margin-top: 50px;
+  background-image: url("../img/balloon-bg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
 }
-
 .indications__heading {
   color: #0063BE;
   margin-bottom: 100px;
 }
-
 .indications__blocks {
   display: flex;
   flex-wrap: wrap;
 }
-
 .indications__blocks:last-child {
   margin-top: 108px;
 }
@@ -418,31 +422,26 @@ nav .header-menu li a {
 .indication {
   display: flex;
   align-items: flex-start;
-  max-width: 450px;
+  max-width: 420px;
 }
-
 .indication__number {
   font-size: 150px;
   color: #0063BE;
   font-weight: 700;
   line-height: 0.777;
-  margin-right: 15px;
+  margin-right: 33px;
 }
-
 .indication__heading {
   font-size: 27px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 .indication:first-child {
   margin-right: 48px;
 }
 
 /* Конец показаний к применению */
-
 /* Форма выпуска */
-
 .release {
   background-image: url("../img/grey-rec.svg");
   background-size: cover;
@@ -450,16 +449,13 @@ nav .header-menu li a {
   margin-top: 64px;
   padding-top: 250px;
 }
-
 .release__heading {
   color: #0063BE;
   margin-bottom: 25px;
 }
-
 .release__subheading {
   color: #2b2f32;
 }
-
 .release .container {
   display: flex;
   justify-content: space-evenly;
@@ -479,35 +475,26 @@ nav .header-menu li a {
   align-items: flex-start;
   max-width: 530px;
 }
-
 .release-point__img {
   margin-right: 16px;
 }
-
 /* Конец формы выпуска */
-
 /* О компании */
-
 .about {
   margin: 130px 0px 100px 0px;
 }
-
 .about__heading {
   text-align: center;
   color: #0063BE;
 }
-
 .about__text {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
-
-.about__text_l,
-.about__text_r {
+.about__text_l, .about__text_r {
   max-width: 560px;
 }
-
 .about__btn {
   padding: 17px 68px;
   max-width: 315px;
@@ -515,13 +502,10 @@ nav .header-menu li a {
 }
 
 /* Конец стилей О компании */
-
 /* Видео блок механики */
-
 .mechanics {
   position: relative;
 }
-
 .mechanics__heading {
   color: #ffffff;
   position: absolute;
@@ -529,7 +513,6 @@ nav .header-menu li a {
   top: 20%;
   transform: translate(-50%, -50%);
 }
-
 .mechanics::after {
   position: absolute;
   content: "";
@@ -539,7 +522,6 @@ nav .header-menu li a {
   background: linear-gradient(180deg, rgba(245, 250, 254, 0.7) 0%, rgba(0, 99, 190, 0.7) 60.94%);
   opacity: 0.5;
 }
-
 .mechanics::before {
   position: absolute;
   content: "";
@@ -563,14 +545,11 @@ nav .header-menu li a {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* Видео блок механики конец */
-
 /* Медицинское применение */
-
 .use {
   background-image: url("../img/blue-rec.svg");
   background-repeat: no-repeat;
@@ -578,13 +557,11 @@ nav .header-menu li a {
   color: #ffffff;
   padding-bottom: 400px;
 }
-
 .use__heading {
   text-align: center;
   margin-bottom: 123px;
   padding-top: 114px;
 }
-
 .use__blocks {
   display: flex;
   justify-content: space-between;
@@ -594,32 +571,26 @@ nav .header-menu li a {
   max-width: 490px;
   height: 288px;
 }
-
 .use-block__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .use-block__more {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
 }
-
 .use-block__more img {
   margin-left: 11px;
 }
-
 .use-block__text {
   margin-top: 45px;
 }
 
 /* Конец стилей Медицинское применение */
-
 /* Стили футера */
-
 footer {
   padding: 105px 0px 75px 0px;
   background-color: #0063BE;
@@ -629,11 +600,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
 .footer-top__links ul {
   display: flex;
 }
-
 .footer-top__link {
   color: #ffffff;
   margin-right: 38px;
@@ -647,12 +616,10 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-bottom__up {
   display: flex;
   align-items: center;
 }
-
 .footer-bottom .up-img {
   padding: 33px;
   border: 2px solid #fff;
@@ -664,37 +631,7 @@ footer {
 }
 
 /* Конец стилей футера */
-
 /* Картинка для кнопки с треугольником на свайпере */
-
 .lecture-slide::before {
   background-image: url("../img/swiper-video-play.svg");
 }
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1540px;
-  }
-}
-
-@media (min-width: 2100px) {
-  .container {
-    max-width: 2000px;
-  }
-}
-
-@media (max-width: 1250px) {
-  .container {
-    padding: 0px 26px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slider-section {
-    margin-top: 50px;
-  }
-}
-
-.webp .main-banner{ background-image: url(../img/main-bg.webp); }
-
-.webp .indications{ background-image: url(../img/balloon-bg.webp); }

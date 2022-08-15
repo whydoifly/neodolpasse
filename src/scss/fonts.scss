@@ -1,22 +1,57 @@
 @font-face {
-	font-family: OpenSans;
+	font-family: Akrobat;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Italic.ttf") format("ttf"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+	src: url("../fonts/Akrobat-Black.ttf") format("ttf"), url("../fonts/Akrobat-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-ExtraLight.ttf") format("ttf"), url("../fonts/Akrobat-ExtraLight.woff2") format("woff2");
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-Light.ttf") format("ttf"), url("../fonts/Akrobat-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-ExtraBold.ttf") format("ttf"), url("../fonts/Akrobat-ExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-Regular.ttf") format("ttf"), url("../fonts/Akrobat-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: OpenSans;
+	font-family: Akrobat;
 	font-display: swap;
-	src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
-	font-weight: 400;
+	src: url("../fonts/Akrobat-Bold.ttf") format("ttf"), url("../fonts/Akrobat-Bold.woff2") format("woff2");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
-	font-family: OpenSans;
+	font-family: Akrobat;
 	font-display: swap;
-	src: url("../fonts/OpenSans-LightItalic.ttf") format("ttf"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
-	font-weight: 400;
+	src: url("../fonts/Akrobat-SemiBold.ttf") format("ttf"), url("../fonts/Akrobat-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-Thin.ttf") format("ttf"), url("../fonts/Akrobat-Thin.woff2") format("woff2");
+	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
@@ -29,7 +64,28 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf"), url("../fonts/OpenSans-MediumItalic.woff2") format("woff2");
+	src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	font-display: swap;
+	src: url("../fonts/OpenSans-Italic.ttf") format("ttf"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	font-display: swap;
+	src: url("../fonts/OpenSans-Light.ttf") format("ttf"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	font-display: swap;
+	src: url("../fonts/OpenSans-LightItalic.ttf") format("ttf"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -43,8 +99,8 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Light.ttf") format("ttf"), url("../fonts/OpenSans-Light.woff2") format("woff2");
-	font-weight: 300;
+	src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf"), url("../fonts/OpenSans-MediumItalic.woff2") format("woff2");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
