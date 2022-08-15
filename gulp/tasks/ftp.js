@@ -3,7 +3,7 @@ import vinylFtp from 'vinyl-ftp';
 import util from 'gulp-util';
 
 export const ftp = () => {
-    // configFTP.log = util.log;
+    configFTP.log = util.log;
     const ftpConnect = vinylFtp.create(configFTP);
     return app.gulp
       .src(`${app.path.buildFolder}/**/*.*`, {})
@@ -15,11 +15,5 @@ export const ftp = () => {
           })
         )
       )
-      .pipe(webpack({
-          mode: app.isBuild ? 'production' : 'development',
-          output: {
-              filename: 'app.min.js',
-          }
-      }))
       .pipe(ftpConnect.dest(`/${app.path.ftp}/${app.path.rootFolder}`))
   };

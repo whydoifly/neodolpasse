@@ -1,4 +1,5 @@
-// @import "fonts";
+@import "fonts";
+@import "swiper";
 
 $default: #0063BE;
 $hover: #2596be;
@@ -28,7 +29,7 @@ $textBlack: #00203d;
     border-radius: 10px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
-    
+    cursor: pointer;
 }
 
 %blue-btn {
@@ -71,6 +72,7 @@ $textBlack: #00203d;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -105,6 +107,8 @@ header {
 
 nav {
     text-align: center;
+    min-width: 877px;
+    margin: 0 auto;
 
     .header-menu {
         padding: 0;
@@ -112,8 +116,6 @@ nav {
         display: flex;
         justify-content: space-evenly;
         border-top: 20px solid $default;
-        min-width: 877px;
-        margin: 0 auto;
 
         li a {
             color: $textBlack;    
@@ -125,6 +127,18 @@ nav {
 .container {
     max-width: 1228px;
     margin: 0 auto;
+
+    @media (max-width: 1250px) {
+        padding: 0px 26px;
+    }
+
+    @media (min-width: 1600px) {
+        max-width: 1540px;
+    }
+
+    @media (min-width: 2100px) {
+        max-width: 2000px;
+    }
 }
 
 .center {
@@ -250,7 +264,12 @@ nav {
 
     .container {
         display: flex;
+        justify-content: space-evenly;
     }
+}
+
+.release-block {
+    margin-left: 40px;
 }
 
 .release-points {
@@ -278,7 +297,7 @@ nav {
 /* О компании */
 
 .about {
-    margin-top: 130px;
+    margin: 130px 0px 100px 0px;
 
     &__heading {
         @extend %heading;
@@ -465,3 +484,10 @@ footer {
 }
 
 /* Конец стилей футера */
+
+/* Картинка для кнопки с треугольником на свайпере */
+.lecture-slide {
+    &::before {
+        background-image: url("@img/swiper-video-play.svg");
+    }
+}

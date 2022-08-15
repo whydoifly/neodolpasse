@@ -1,0 +1,127 @@
+$default: #0063BE;
+$textBlack: #00203d;
+
+.slider-section {
+    margin-top: 130px;
+
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-top {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__heading {
+        @extend %heading;
+        color: $default;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        color: $textBlack;
+        img {
+            margin-left: 20px;
+        }
+    }
+}
+
+.article-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 735px;
+
+    &__img {
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+    &__desc {
+        margin-bottom: 25px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    &__button {
+        @extend %transparent-btn;
+        padding: 18px 60px;
+    }
+}
+
+.research-slide {
+    position: relative;
+    color: #ffffff;
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        position: absolute;
+        left: 41%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+        font-weight: 800;
+        z-index: 5;
+    }
+
+    &__desc {
+        margin-top: 44px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: linear-gradient(180deg,rgba(245,250,254,.7) 0,rgba(0,99,190,.7) 60.94%);
+        opacity: .5;
+        border-radius: 10px;
+    }
+}
+
+.lecture-slide {
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 72px;
+        height: 72px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: $default;
+        transition: all 0.1s;
+        background-position: 55.5% center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    &__desc {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%,-50%);
+        font-weight: 800;
+        z-index: 5;
+        min-width: 420px;
+    }
+}
