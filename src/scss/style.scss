@@ -1,5 +1,6 @@
 @import "fonts";
 @import "swiper";
+@import "modal";
 
 $default: #0063BE;
 $hover: #2596be;
@@ -9,7 +10,7 @@ $headBlack: #2b2f32;
 $textBlack: #00203d;
 
 %akrobat {
-    font-family: 'Akrobat';
+    font-family: 'Akrobat', Arial;
     font-style: normal;
 }
 
@@ -22,11 +23,17 @@ $textBlack: #00203d;
     @extend %akrobat;
     font-size: 64px;
     font-weight: 600;
+    @media (max-width: 1120px) {
+        font-size: 24px;
+    }
 }
 
 %subheading {
     font-size: 27px;
     font-weight: 700;
+    @media (max-width: 1160px) {
+        font-size: 16px;
+    }
 }
 
 %btn-basic {
@@ -36,6 +43,9 @@ $textBlack: #00203d;
     display: inline-block;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    @media (max-width: 1120px) {
+        font-size: 14px;
+    }
 }
 
 %blue-btn {
@@ -99,16 +109,80 @@ a {
     text-decoration: none;
 }
 
+.mobile-menu {
+    background-color: $default;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 32px 16px;
+    top: 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .mobile-menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger-alt {
+    cursor: pointer;
+  }
+  
+  .mobile-menu__links {
+    list-style: none;
+    margin-top: 66px;
+  }
+  
+  .mobile-menu__link {
+    margin-bottom: 38px;
+  }
+  
+  .mobile-menu__link_a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .mobile-menu__link_a:active {
+    color: #fff;
+  }
+
 header {
     box-shadow: 0px -21px 60px rgba(0, 0, 0, 0.25);
     position: relative;
 
+    @media (max-width: 1120px) {
+        padding: 0px 26px;
+    }
+
+    .burger-icon {
+        cursor: pointer;
+        display: none;
+        @media (max-width: 1120px) {
+            display: block;
+        }
+    }
+
     .container {
         display: flex;
+
+        @media (max-width: 1120px) {
+            justify-content: space-between;
+            border-top: 10px solid $default;
+            padding: 0px;
+        }
     }
 
     .header-logo {
         margin-right: 44px;
+
+        @media (max-width: 1120px) {
+            margin: 7px 0px 10px 0px;
+            width: 65px;
+            height: 27px;
+        }    
     }
 }
 
@@ -116,6 +190,10 @@ nav {
     text-align: center;
     min-width: 877px;
     margin: 0 auto;
+
+    @media (max-width: 1120px) {
+        display: none;
+    }
 
     .header-menu {
         padding: 0;
@@ -127,7 +205,7 @@ nav {
         li a {
             color: $textBlack;    
         }
-
+        
     }
 }
 
@@ -161,9 +239,28 @@ nav {
     padding-top: 170px;
     height: 105vh;
 
+    @media (min-width: 1300px) {
+        background-position-y: -10vw;
+    }
+
+    @media (max-width: 768px) {
+        height: 55vh;
+    }
+
+    @media (max-width: 1120px) {
+        padding-top: 55px;
+        .container {
+            text-align: center;
+        }
+    }
+
     &__upheading {
         color: $default;
         margin-bottom: 15px;
+        @media (max-width: 1120px) {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
     }
     
     &__heading {
@@ -172,6 +269,10 @@ nav {
         font-size: 96px;
         font-weight: 600;
         margin-bottom: 25px;
+        @media (max-width: 1120px) {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
     }
 
     &__subheading {
@@ -180,11 +281,18 @@ nav {
         font-size: 27px;
         color: $headBlack;
         margin-bottom: 50px;
+        @media (max-width: 1120px) {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
     }
 
     .blue-btn,
     .transparent-btn {
         padding: 17px 57px;
+        @media (max-width: 1120px) {
+            padding: 13px 26px;
+        }
     }
 
     .blue-btn {
@@ -198,15 +306,19 @@ nav {
 
 .indications {
     margin-top: 50px;
-    background-image: url("@img/balloon-bg.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+
+    .container {
+        position: relative;
+    }
 
     &__heading {
         @extend %heading;
         color: $default;
         margin-bottom: 100px;
+        
+        @media (max-width: 1120px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__blocks {
@@ -214,7 +326,22 @@ nav {
         flex-wrap: wrap;
         &:last-child {
             margin-top: 108px;
+            @media (max-width: 1120px) {
+                margin-top: 0px;
+            }
         } 
+        @media (max-width: 1120px) {
+            display: block;
+        }
+    }
+
+    .balloon-img {
+        position: absolute;
+        right: 0px;
+        top: 112%;
+        @media (max-width: 1120px) {
+            display: none;
+        }
     }
 }
 
@@ -223,6 +350,10 @@ nav {
     align-items: flex-start;
     max-width: 420px;
 
+    @media (max-width: 1120px) {
+        margin-bottom: 30px;
+    }
+
     &__number {
         @extend %akrobat;
         font-size: 150px;
@@ -230,6 +361,10 @@ nav {
         font-weight: 700;
         line-height: 0.777;
         margin-right: 33px;
+        @media (max-width: 1120px) {
+            font-size: 100px;
+            margin-right: 20px;
+        }
     }
 
     &__heading {
@@ -237,9 +372,22 @@ nav {
         font-size: 27px;
         font-weight: 700;
         margin-bottom: 15px;
+        @media (max-width: 1120px) {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__desc {
+        @media(max-width: 1120px) {
+            font-size: 14px;
+        }
     }
     &:first-child {
         margin-right: 48px;
+        @media (max-width: 1120px) {
+            margin-right: 0px;
+        }
     }
 }
 
@@ -250,20 +398,50 @@ nav {
 .release {
     background-image: url("@img/grey-rec.svg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position-y: 10px;
     margin-top: 64px;
     padding-top: 250px;
+
+    .open-3d {
+        cursor: pointer;
+        position: relative;
+        left: 250px;
+        top: 250px;
+        transform: translate(67%, 10%);
+
+        @media (max-width: 1450px) {
+            transform: translate(25%, 10%);
+        }
+    }
+
+    @media (max-width: 1120px) {
+        padding-top: 60px;
+        .flask-img {
+            display: none;
+        }
+    }
 
     &__heading {
         @extend %heading;
         color: $default;
         margin-bottom: 25px;
+        @media (max-width: 1120px) {
+            text-align: center;
+            margin-bottom: 15px;
+        }
     }
 
     &__subheading {
         @extend %subheading;
         @extend %akrobat;
         color: $headBlack;
+
+        @media (max-width: 1120px) {
+            text-align: center;
+        }
     }
 
     .container {
@@ -278,6 +456,9 @@ nav {
 
 .release-points {
     margin-top: 70px;
+    @media (max-width: 1120px) {
+        margin-top: 40px;
+    }
 }
 
 .release-point {
@@ -286,12 +467,25 @@ nav {
     align-items: flex-start;
     max-width: 530px;
 
+    @media (max-width: 1120px) {
+        max-width: 100%;
+    }
+
     &__img {
         margin-right: 16px;
+        @media (max-width: 1120px) {
+            width: 25px;
+            height: 25px;
+        }
     }
 
     &__text {
         @extend %textBasic;
+
+        @media (max-width: 1120px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 }
 
@@ -302,6 +496,10 @@ nav {
 
 .about {
     margin: 130px 0px 100px 0px;
+
+    @media (max-width: 1120px) {
+        margin: 54px 0px 45px 0px;
+    }
 
     &__heading {
         @extend %heading;
@@ -314,11 +512,29 @@ nav {
         margin-top: 70px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1120px) {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+        }
     }
 
     &__text_l,
     &__text_r {
         max-width: 560px;
+
+        @media (max-width: 1120px) {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__text_r {
+        @media (max-width: 1120px) {
+            display: none;
+        }
     }
 
     &__btn {
@@ -327,6 +543,11 @@ nav {
         padding: 17px 68px;
         max-width: 315px;
         margin: 70px auto 0px auto;
+
+        @media (max-width: 1120px) {
+            margin-top: 30px;
+            padding: 11px 17px;
+        }
     }
 }
 
@@ -337,13 +558,18 @@ nav {
 .mechanics {
     position: relative;
 
+    @media (max-width: 1120px) {
+        height: 40vh;
+    }
+
     &__heading {
         @extend %heading;
         color: #ffffff;
         position: absolute;
-        left: 50%;
+        left: 49%;
         top: 20%;
         transform: translate(-50%, -50%);
+        z-index: 10;
     }
 
     &::after {
@@ -392,18 +618,28 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    padding-bottom: 400px;
+    padding-bottom: 175px;
+    background-position-x: 34%;
 
     &__heading {
         @extend %heading;
         text-align: center;
         margin-bottom: 123px;
         padding-top: 114px;
+
+        @media (max-width: 1120px) {
+            margin-bottom: 65px;
+            padding-top: 43px;
+        }
     }
 
     &__blocks {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1120px) {
+            display: block;
+        }
     }
 }
 
@@ -411,10 +647,57 @@ nav {
     max-width: 490px;
     height: 288px;
 
+    @media (max-width: 1120px) {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 54px;
+    }
+
     &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+    }
+
+    &__pop-up {
+        background-color: #F8F9FB;
+        color: $textBlack;
+        position: absolute;
+        right: 0;
+        padding: 60px;
+        border-radius: 10px;
+        display: none;
+        @media (max-width: 1120px) {
+            padding: 30px;
+        }
+
+        .pop-up {
+            &__cross {
+                cursor: pointer;
+                position: absolute;
+                right: 22px;
+                top: 22px;  
+            }
+            &__heading {
+                @extend %subheading;
+                margin-bottom: 25px;
+                @media (max-width: 1120px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &__text {
+                font-size: 20px;
+                @media (max-width: 1120px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__pop-up.show {
+        display: block;
     }
 
     &__heading {
@@ -425,8 +708,12 @@ nav {
     &__more {
         display: flex;
         align-items: center;
-        text-decoration: none;
         color: #ffffff;
+        cursor: pointer;
+
+        @media (max-width: 1120px) {
+            font-size: 14px;
+        }
 
         img {
             margin-left: 11px;
@@ -436,10 +723,120 @@ nav {
     &__text {
         @extend %textBasic;
         margin-top: 45px;
+        @media (max-width: 1120px) {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }
 
 /* Конец стилей Медицинское применение */
+
+/* Карточки Q&A */
+
+.qna {
+    margin-top: 144px;
+
+    @media (max-width: 1120px) {
+        margin-top: 24px;
+    }
+}
+
+.wrapper {
+    padding-top: 150px;
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+
+.qna-card {
+  padding: 66px;
+  position: sticky;
+  background: #F8F9FB;
+  box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  height: 65vh;
+  overflow: hidden;
+
+  &__heading {
+    @extend %subheading;
+    @extend %akrobat;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__text {
+    font-family: Open-Sans, sans-serif;
+    @media (max-width: 1120px) {
+        font-size: 14px;
+    }
+  }
+
+  &__button {
+    @extend %transparent-btn;
+    display: inline-block;
+    padding: 18px 36px;
+    
+    @media (max-width: 1120px) {
+        padding: 11px 30px;
+    }
+  }
+}
+
+.question-img {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.qna-1 {
+    bottom: 18vh;
+    z-index: 5;
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+}
+
+.qna-2 {
+    bottom: 12vh;
+    z-index: 4;
+    margin-top: -7vh;
+    margin-bottom: 2vh;
+}
+.qna-3 {
+    bottom: 5vh;
+    z-index: 3;
+    margin-top: 0vh;
+}
+
+.qna-4 {
+    bottom: 0vh;
+    z-index: 2;
+    margin-top: 2vh;
+    margin-bottom: 9vh;
+}
+
+.qna-5 {
+    bottom: -5vh;
+    z-index: 1;
+    margin-top: -6vh;
+    margin-bottom: 9vh;
+}
+
+/* Конец карточек Q&A */
 
 /* Стили футера */
 
@@ -456,11 +853,37 @@ footer {
         ul {
             display: flex;
         }
+
+        @media (max-width: 1120px) {
+            display: none;
+        }
     }
 
     &__link {
         color: #ffffff;
         margin-right: 38px;
+    }
+
+    &__up {
+        display: none;
+        @media (max-width: 1120px) {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+
+    &__logo {
+        @media (max-width: 1120px) {
+            width: 100px;
+        }
+    }
+
+    .up-img {
+        margin-left: 8px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -472,20 +895,32 @@ footer {
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1120px) {
+        margin-top: 37px;
+    }
+
     &__up {
         display: flex;
         align-items: center;
+        @media (max-width: 1120px) {
+            display: none;
+        }
     }
 
-    .up-img {
-        padding: 33px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        height: 24px;
-        width: 20px;
-        margin-left: 30px;
-        cursor: pointer;
+    &__address {
+        @media (max-width: 1120px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
+
+}
+
+.up-img {
+    height: 87px;
+    width: 87px;
+    margin-left: 30px;
+    cursor: pointer;
 }
 
 /* Конец стилей футера */

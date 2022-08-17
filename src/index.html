@@ -13,12 +13,13 @@
                 <div class="main-banner__heading">Неодолпассе</div>
                 <div class="main-banner__subheading">ЛЕГКАЯ ПОМОЩЬ В ЛЕЧЕНИИ БОЛИ</div>
                 <div class="main-banner__btns">
-                    <a href="#" class="btn main-banner__btn blue-btn">Подробнее</a>
-                    <a href="#" class="btn main-banner__btn transparent-btn">Исследование</a>
+                    <a href="#indications-section" class="btn main-banner__btn blue-btn">Подробнее</a>
+                    <a href="files/neodolpasse_instruction.pdf" download class="btn main-banner__btn transparent-btn">Исследование</a>
                 </div>
             </div>
         </section>
 
+        <div id="indications-section"></div>
         <section class="indications">
             <div class="container">
                 <div class="indications__heading">Показания к применению</div>
@@ -55,11 +56,18 @@
                     </div>
                 </div>
             </div>
+            <img src="@img/balloon-bg.png" alt="" class="balloon-img">
         </section>
 
         <section class="release">
-            <div class="container">.
-                <img src="@img/flask.png" alt="препарат 3D">
+            <div class="container">
+                <a class="lnk_modal-open" data-modalTitle="3d-модель Раствора Неодолпассе" data-modalDesc=""
+                    href="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed"
+                    data-modal="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed">
+                    <img src="@img/3d-icon.svg" alt="" class="open-3d">
+                    
+                </a>
+                <img src="@img/flask.png" alt="препарат 3D" class="flask-img">
                 <div class="release-block">
                     <div class="release__heading">Форма выпуска</div>
                     <div class="release__subheading">Раствор для инфузий диклофенак 75 мг и орфенадрин 30 мг</div>
@@ -90,10 +98,16 @@
             </div>
         </section>
 
+        <a class="lnk_modal-open" data-modalTitle="Механизм действия" data-modalDesc=""
+                    href="https://player.vimeo.com/video/512496971?h=74dd4a973d"
+                    data-modal="https://player.vimeo.com/video/512496971?h=74dd4a973d">
         <section class="mechanics">
+            
             <div class="mechanics__heading">Механизм действия</div>
             <img src="@img/mechanics-img.jpg" alt="" class="mechanics-img" />
+            
         </section>
+        </a>
 
         <section class="use">
             <div class="use__heading">Медицинское применение</div>
@@ -120,21 +134,30 @@
             @@include('html/_lectures.html')
         </section>
 
+        <div id="qna-section"></div>
+        <section class="qna">
+            @@include('html/_qna.html')
+        </section>
+
         <section class="about">
             <div class="about__heading">О компании Фрезениус Каби</div>
             <div class="container">
                 <div class="about__text">
                     <div class="about__text_l">
-                        Фрезениус Каби является частью немецкого концерна Фрезениус — мирового лидера в создании средств для
-                        оказания медицинской помощи больным в критических состояниях как в госпитальных, так и в домашних
+                        Фрезениус Каби является частью немецкого концерна Фрезениус — мирового лидера в создании средств
+                        для
+                        оказания медицинской помощи больным в критических состояниях как в госпитальных, так и в
+                        домашних
                         условиях.
-                        Основными направлениями деятельности Фрезениус Каби являются разработка и производство препаратов и
+                        Основными направлениями деятельности Фрезениус Каби являются разработка и производство
+                        препаратов и
                         технологий для инфузионной терапии, парентерального и энтерального питания, химиотерапевтических
                         препаратов и других препаратов для внутривенного введения, а также их медико-технического
                         обеспечения.
                     </div>
                     <div class="about__text_r">
-                        Являясь неотъемлемой частью концерна Фрезениус, Фрезениус Каби занимает лидирующую позицию в Европе
+                        Являясь неотъемлемой частью концерна Фрезениус, Фрезениус Каби занимает лидирующую позицию в
+                        Европе
                         и в мире по производству и продажам препаратов для восполнения объема циркулирующей крови и
                         клинического питания.
                         По данным компании IMS Фрезениус Каби является крупнейшим в мире производителем препаратов для
@@ -142,14 +165,19 @@
                     </div>
                 </div>
                 <div class="center">
-                    <a href="#" class="about__btn">На сайт компании</a>
+                    <a href="https://www.freseniusmedicalcare.ru/ru/glavnaja-stranica" class="about__btn" target="_blank">На сайт компании</a>
                 </div>
             </div>
         </section>
 
+        <a class="lnk_modal-open" data-modalTitle="О компании" data-modalDesc=""
+                    href="https://player.vimeo.com/video/555118922?h=ef811f6360"
+                    data-modal="https://player.vimeo.com/video/555118922?h=ef811f6360">
         <section class="mechanics">
+            <div class="mechanics__heading">О компании</div>
             <img src="@img/big-vid-img.jpg" alt="" class="mechanics-img" />
         </section>
+        </a>
 
     </main>
     @@include('html/footer.html')

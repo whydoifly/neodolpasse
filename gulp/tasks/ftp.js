@@ -15,5 +15,5 @@ export const ftp = () => {
           })
         )
       )
-      .pipe(ftpConnect.dest(`/${app.path.ftp}/${app.path.rootFolder}`))
+      .pipe(ftpConnect.dest(`${app.path.ftp}`))
   };

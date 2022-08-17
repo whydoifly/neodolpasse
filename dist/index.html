@@ -31,12 +31,36 @@
                     <a href="#lectures">Видео-лекции</a>
                 </li>
                 <li>
-                    <a href="#qna">Вопрос-ответ</a>
+                    <a href="#qna-section">Вопрос-ответ</a>
                 </li>
             </ul>
         </nav>
+        <img src="img/burger.svg" alt="" class="burger-icon">
     </div>
 </header>
+<div class="mobile-menu">
+    <div class="mobile-menu__top">
+        <img src="img/logo-alt.svg" alt="">
+        <img src="img/burger-alt.svg" alt="" class="burger-alt">
+    </div>
+    <ul class="mobile-menu__links">
+        <li class="mobile-menu__link">
+            <a href="/#articles" class="mobile-menu__link_a">Статьи</a>
+        </li>
+        <li class="mobile-menu__link">
+            <a href="/#researches" class="mobile-menu__link_a">Исследования</a>
+        </li>
+        <li class="mobile-menu__link">
+            <a href="/#clinical-analysis" class="mobile-menu__link_a">Клинические разборы</a>
+        </li>
+        <li class="mobile-menu__link">
+            <a href="/#lectures" class="mobile-menu__link_a">Видео лекции</a>
+        </li>
+        <li class="mobile-menu__link">
+            <a href="/#qna-section" class="mobile-menu__link_a">Вопрос-ответ</a>
+        </li>
+    </ul>
+</div>
     <main>
         <section class="main-banner">
             <div class="container">
@@ -44,12 +68,13 @@
                 <div class="main-banner__heading">Неодолпассе</div>
                 <div class="main-banner__subheading">ЛЕГКАЯ ПОМОЩЬ В ЛЕЧЕНИИ БОЛИ</div>
                 <div class="main-banner__btns">
-                    <a href="#" class="btn main-banner__btn blue-btn">Подробнее</a>
-                    <a href="#" class="btn main-banner__btn transparent-btn">Исследование</a>
+                    <a href="#indications-section" class="btn main-banner__btn blue-btn">Подробнее</a>
+                    <a href="files/neodolpasse_instruction.pdf" download class="btn main-banner__btn transparent-btn">Исследование</a>
                 </div>
             </div>
         </section>
 
+        <div id="indications-section"></div>
         <section class="indications">
             <div class="container">
                 <div class="indications__heading">Показания к применению</div>
@@ -86,11 +111,18 @@
                     </div>
                 </div>
             </div>
+            <img src="img/balloon-bg.png" alt="" class="balloon-img">
         </section>
 
         <section class="release">
-            <div class="container">.
-                <img src="img/flask.png" alt="препарат 3D">
+            <div class="container">
+                <a class="lnk_modal-open" data-modalTitle="3d-модель Раствора Неодолпассе" data-modalDesc=""
+                    href="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed"
+                    data-modal="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed">
+                    <img src="img/3d-icon.svg" alt="" class="open-3d">
+                    
+                </a>
+                <img src="img/flask.png" alt="препарат 3D" class="flask-img">
                 <div class="release-block">
                     <div class="release__heading">Форма выпуска</div>
                     <div class="release__subheading">Раствор для инфузий диклофенак 75 мг и орфенадрин 30 мг</div>
@@ -121,10 +153,16 @@
             </div>
         </section>
 
+        <a class="lnk_modal-open" data-modalTitle="Механизм действия" data-modalDesc=""
+                    href="https://player.vimeo.com/video/512496971?h=74dd4a973d"
+                    data-modal="https://player.vimeo.com/video/512496971?h=74dd4a973d">
         <section class="mechanics">
+            
             <div class="mechanics__heading">Механизм действия</div>
             <img src="img/mechanics-img.jpg" alt="" class="mechanics-img" />
+            
         </section>
+        </a>
 
         <section class="use">
             <div class="use__heading">Медицинское применение</div>
@@ -134,9 +172,16 @@
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">СОСТАВ</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Состав</div>
+                    <div class="pop-up__text">1 флакон содержит: действующие вещества: диклофенак натрия 75,0 мг,
+                        орфенадрина цитрат 30,0 мг; вспомогательные вещества: яблочная кислота, ацетилцистеин, динатрия
+                        эдетата дигидрат, натрия гидроксид, вода для инъекций.</div>
+                </div>
             </div>
             <div class="use-block__text">
                 1 флакон содержит: действующие вещества: диклофенак натрия 75,0 мг, орфенадрина цитрат 30,0 мг
@@ -145,20 +190,41 @@
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">ФАРМАКОДИНАМИКА</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Фармакодинамика</div>
+                    <div class="pop-up__text">Неодолпассе — комбинированный лекарственный препарат, содержащий
+                        нестероидное противовоспалительное средство диклофенак и миорелаксант центрального действия
+                        орфенадрин. Диклофенак обладает анальгезирующим, жаропонижающим и противовоспалительным
+                        действием.
+                        Неселективно ингибируя циклооксигеназу 1 и 2 типа (ЦОГ-1 и ЦОГ-2), нарушает метаболизм
+                        арахидоновой кислоты и синтез простагландинов, являющихся основным звеном в развитии воспаления.
+                        Орфенадрин — миорелаксант центрального действия, снижает патологически повышенный мышечный
+                        тонус, обладает парасимпатолитическим, местноанестезирующим и умеренным антигистаминным
+                        действием.</div>
+                </div>
             </div>
             <div class="use-block__text">
-                Неодолпассе — комбинированный лекарственный препарат, содержащий нестероидное противовоспалительное средство
+                Неодолпассе — комбинированный лекарственный препарат, содержащий нестероидное противовоспалительное
+                средство
             </div>
         </div>
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">ПОКАЗАНИЯ К ПРИМЕНЕНИЮ</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Показания к применению</div>
+                    <div class="pop-up__text">Кратковременное лечение болевого синдрома при следующих заболеваниях:
+                        острый вертеброгенный болевой синдром, корешковые и вертеброгенные боли; постоперационный
+                        болевой синдром.</div>
+                </div>
             </div>
             <div class="use-block__text">
                 Кратковременное лечение болевого синдрома при следующих заболеваниях
@@ -167,12 +233,20 @@
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">ХРАНЕНИЕ</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Хранение</div>
+                    <div class="pop-up__text">Хранить в защищенном от света месте при температуре не выше 25 °С. Срок
+                        годности 1 год. Условия отпуска: по рецепту.
+                        Перед использованием необходимо ознакомится с полной инструкцией по медицинскому применению.
+                    </div>
+                </div>
             </div>
             <div class="use-block__text">
-                Хранить в защищенном от света месте при температуре не выше 25 °С 
+                Хранить в защищенном от света месте при температуре не выше 25 °С
             </div>
         </div>
     </div>
@@ -180,20 +254,42 @@
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">Диклофенак фармакокинетика</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Диклофенак фармакокинетика</div>
+                    <div class="pop-up__text">Самые высокие концентрации диклофенака в плазме достигаются
+                        непосредственно после инфузии, что приводит к быстрому наступлению эффекта. Инфузия позволяет
+                        избегать пиков концентрации диклофенака в плазме. После внутривенного введения 75 мг
+                        диклофенака, его максимальная концентрация в плазме составляет 1,9 мкг/мл на протяжении более 2
+                        часов и находится в линейной зависимости от введенной дозы. Системная биодоступность после
+                        внутривенного введения диклофенака приблизительно в 2 раза больше, чем после его перорального
+                        или ректального применения, поскольку в последних случаях около половины количества диклофенака
+                        метаболизируется при «первичном прохождении» через печень. Конечный период полувыведения (T1/2)
+                        составляет 1-2 ч. T1/2 4-х метаболитов, включая два фармакологически активных, также
+                        непродолжителен и составляет 1-3 ч.</div>
+                </div>
             </div>
             <div class="use-block__text">
-                Самые высокие концентрации диклофенака в плазме достигаются непосредственно после инфузии, что приводит к быстрому наступлению эффекта
+                Самые высокие концентрации диклофенака в плазме достигаются непосредственно после инфузии, что приводит
+                к быстрому наступлению эффекта
             </div>
         </div>
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">Орфенадрин фармакокинетика</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Орфенадрин фармакокинетика</div>
+                    <div class="pop-up__text">Максимальный уровень орфенадрина в плазме достигается уже через 2 мин
+                        после внутривенного введения. Большая часть орфенадрина метаболизируется и преимущественно
+                        выводится через почки. Конечный период полувыведения Т1/2 составляет 14 ч.</div>
+                </div>
             </div>
             <div class="use-block__text">
                 Максимальный уровень орфенадрина в плазме достигается уже через 2 мин после внутривенного введения
@@ -202,23 +298,45 @@
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">Способ применения и дозы</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Способ применения и дозы</div>
+                    <div class="pop-up__text">Внутривенно, в виде инфузии. Стандартная доза 250 мл 1 раз в сутки. Один
+                        флакон препарата (250 мл) содержит 75,0 мг диклофенака. В исключительных случаях 2 раза в сутки
+                        по 250 мл с интервалом между инфузиями не менее 8 ч. Продолжительность инфузии 250 мл препарата
+                        составляет 1,5 — 2 ч (2,1-2,8 мл/мин). Благодаря низкой осмолярности (приблизительно 303
+                        мОсмоль/л) препарат может вводиться через периферическую вену. Не следует применять препарат
+                        Неодолпассе более двух дней подряд. Максимальная суточная доза не должна превышать 150 мг
+                        диклофенака в сутки.
+                    </div>
+                </div>
             </div>
             <div class="use-block__text">
-                Внутривенно, в виде инфузии. Стандартная доза 250 мл 1 раз в сутки. 
+                Внутривенно, в виде инфузии. Стандартная доза 250 мл 1 раз в сутки.
             </div>
         </div>
         <div class="use-block">
             <div class="use-block__top">
                 <div class="use-block__heading">Влияние на способность управлять транспортными средствами</div>
-                <a href="#" class="use-block__more">
-                    Подробнее <img src="img/more-arrow.svg" alt=""> 
-                </a>
+                <div class="use-block__more">
+                    Подробнее <img src="img/more-arrow.svg" alt="">
+                </div>
+                <div class="use-block__pop-up">
+                    <img src="img/blue-cross.svg" alt="Закрыть pop-up" class="pop-up__cross"></img>
+                    <div class="pop-up__heading">Влияние на способность управлять транспортными средствами</div>
+                    <div class="pop-up__text">Пациентам, у которых на фоне применения препарата возникают зрительные
+                        нарушения, головокружение, сонливость, вертиго или другие нарушения со стороны центральной
+                        нервной системы, необходимо воздержаться от управления автомобилем, работы с механизмами и видов
+                        деятельности, требующих быстроты психомоторных реакций.
+                    </div>
+                </div>
             </div>
             <div class="use-block__text">
-                Пациентам, у которых на фоне применения препарата возникают зрительные нарушения, головокружение, сонливость, вертиго или другие нарушения со стороны центральной нервной системы
+                Пациентам, у которых на фоне применения препарата возникают зрительные нарушения, головокружение,
+                сонливость, вертиго или другие нарушения со стороны центральной нервной системы
             </div>
         </div>
     </div>
@@ -283,6 +401,30 @@
         </div>
     </div>
 </div>
+<div class="mobile-slider">
+    <div class="mobile-slide article-slide">
+        <div class="article-slide__top">
+            <img src="img/article-img-1.jpg" alt="" class="article-slide__img">
+            <div class="article-slide__desc">Международный опыт использования НЕОДОЛПАССЕ </div>
+            <div class="article-slide__authors">Г. Р. Абузарова, Р. Р. Сарманаева, С. В. Кузнецов, Н. М. Бычкова, Ю. В.
+                Бражникова</div>
+        </div>
+        <div class="article-slide__bottom">
+            <div class="article-slide__button">Подробнее</div>
+        </div>
+    </div>
+    <div class="mobile-slide article-slide">
+        <div class="article-slide__top">
+            <img src="img/article-img-1.jpg" alt="" class="article-slide__img">
+            <div class="article-slide__desc">Международный опыт использования НЕОДОЛПАССЕ </div>
+            <div class="article-slide__authors">Г. Р. Абузарова, Р. Р. Сарманаева, С. В. Кузнецов, Н. М. Бычкова, Ю. В.
+                Бражникова</div>
+        </div>
+        <div class="article-slide__bottom">
+            <div class="article-slide__button">Подробнее</div>
+        </div>
+    </div>
+</div>
             </div>
         </section>
 
@@ -296,7 +438,7 @@
         <a href="#" class="slider-top__more">Смотреть все исследования <img src="img/arrow-more.svg" alt=""></a>
     </div>
 </div>
-<div class="swiper researches-swiper">
+<div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
         <div class="swiper-slide research-slide">
             <div class="research-slide__info">
@@ -335,6 +477,34 @@
             <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
         </div>
         <div class="swiper-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Г.Р. Абузарова и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Исследование эффективности
+                    Неодолпассе у онкологических пациентов
+                </div>
+            </div>
+            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
+        </div>
+    </div>
+</div>
+<div class="mobile-slider">
+    <div class="container">
+        <div class="mobile-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Г.Р. Абузарова и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Исследование эффективности
+                    Неодолпассе у онкологических пациентов
+                </div>
+            </div>
+            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
+        </div>
+        <div class="mobile-slide research-slide">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
                     Г.Р. Абузарова и соавт.
@@ -360,7 +530,7 @@
         <a href="#" class="slider-top__more">Смотреть все разборы <img src="img/arrow-more.svg" alt=""></a>
     </div>
 </div>
-<div class="swiper researches-swiper">
+<div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
         <div class="swiper-slide research-slide">
             <div class="research-slide__info">
@@ -405,6 +575,35 @@
                 </div>
             </div>
             <img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img">
+        </div>
+    </div>
+</div>
+
+<div class="mobile-slider">
+    <div class="container">
+        <div class="mobile-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Г.Р. Абузарова и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Исследование эффективности
+                    Неодолпассе у онкологических пациентов
+                </div>
+            </div>
+            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
+        </div>
+        <div class="mobile-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Г.Р. Абузарова и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Исследование эффективности
+                    Неодолпассе у онкологических пациентов
+                </div>
+            </div>
+            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
         </div>
     </div>
 </div>
@@ -420,7 +619,7 @@
         <a href="#" class="slider-top__more">Смотреть все видео-лекции <img src="img/arrow-more.svg" alt=""></a>
     </div>
 </div>
-<div class="swiper researches-swiper">
+<div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
         <div class="swiper-slide research-slide lecture-slide">
             <div class="lecture-slide__desc">
@@ -448,6 +647,179 @@
         </div>
     </div>
 </div>
+
+<div class="mobile-slider">
+    <div class="container">
+        <div class="mobile-slide research-slide lecture-slide">
+            <div class="lecture-slide__desc">
+                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
+            </div>
+            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
+        </div>
+        <div class="mobile-slide research-slide lecture-slide">
+            <div class="lecture-slide__desc">
+                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
+            </div>
+            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
+        </div>
+    </div>
+</div>
+        </section>
+
+        <div id="qna-section"></div>
+        <section class="qna">
+            <div class="container">
+    <div class="slider-top">
+        <div class="slider-top__heading">
+            Вопрос-ответ
+        </div>
+        <a href="#" class="slider-top__more">Смотреть все вопросы и ответы <img src="img/arrow-more.svg" alt=""></a>
+    </div>
+    <div class="wrapper">
+        <div class="qna-card qna-1">
+            <div class="qna-card__block">
+                <div class="qna-card__info">
+                    <img src="img/blue-questionmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Вопрос</div>
+                        <div class="qna-card__text">
+                            В последних клинических рекомендациях говорится, что лучше
+                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
+                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                        </div>
+                    </div>
+                </div>
+                <div class="qna-card__info">
+                    <img src="img/blue-checkmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Отвечает</div>
+                        <div class="qna-card__text">
+                            C.К. Зырянов
+                        </div>
+                    </div>
+                </div>
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="" data-modalDesc=""
+                    href="https://player.vimeo.com/video/554240298?h=b8fa89bcc5"
+                    data-modal="https://player.vimeo.com/video/554240298?h=b8fa89bcc5">
+                    Смотреть ответ
+                </a>
+            </div>
+            <img src="img/question-img.png" alt="" class="question-img">
+        </div>
+        <div class="qna-card qna-2">
+            <div class="qna-card__block">
+                <div class="qna-card__info">
+                    <img src="img/blue-questionmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Вопрос</div>
+                        <div class="qna-card__text">
+                            В последних клинических рекомендациях говорится, что лучше
+                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
+                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                        </div>
+                    </div>
+                </div>
+                <div class="qna-card__info">
+                    <img src="img/blue-checkmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Отвечает</div>
+                        <div class="qna-card__text">
+                            C.К. Зырянов
+                        </div>
+                    </div>
+                </div>
+                <a class="qna-card__button">
+                    Смотреть ответ
+                </a>
+            </div>
+            <img src="img/question-img.png" alt="" class="question-img">
+        </div>
+        <div class="qna-card qna-3">
+            <div class="qna-card__block">
+                <div class="qna-card__info">
+                    <img src="img/blue-questionmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Вопрос</div>
+                        <div class="qna-card__text">
+                            В последних клинических рекомендациях говорится, что лучше
+                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
+                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                        </div>
+                    </div>
+                </div>
+                <div class="qna-card__info">
+                    <img src="img/blue-checkmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Отвечает</div>
+                        <div class="qna-card__text">
+                            C.К. Зырянов
+                        </div>
+                    </div>
+                </div>
+                <a class="qna-card__button">
+                    Смотреть ответ
+                </a>
+            </div>
+            <img src="img/question-img.png" alt="" class="question-img">
+        </div>
+        <div class="qna-card qna-4">
+            <div class="qna-card__block">
+                <div class="qna-card__info">
+                    <img src="img/blue-questionmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Вопрос</div>
+                        <div class="qna-card__text">
+                            В последних клинических рекомендациях говорится, что лучше
+                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
+                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                        </div>
+                    </div>
+                </div>
+                <div class="qna-card__info">
+                    <img src="img/blue-checkmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Отвечает</div>
+                        <div class="qna-card__text">
+                            C.К. Зырянов
+                        </div>
+                    </div>
+                </div>
+                <a class="qna-card__button">
+                    Смотреть ответ
+                </a>
+            </div>
+            <img src="img/question-img.png" alt="" class="question-img">
+        </div>
+        <div class="qna-card qna-5">
+            <div class="qna-card__block">
+                <div class="qna-card__info">
+                    <img src="img/blue-questionmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Вопрос</div>
+                        <div class="qna-card__text">
+                            В последних клинических рекомендациях говорится, что лучше
+                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
+                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                        </div>
+                    </div>
+                </div>
+                <div class="qna-card__info">
+                    <img src="img/blue-checkmark.svg" alt="" class="qna-card__img">
+                    <div class="qna-card__info_block">
+                        <div class="qna-card__heading">Отвечает</div>
+                        <div class="qna-card__text">
+                            C.К. Зырянов
+                        </div>
+                    </div>
+                </div>
+                <a class="qna-card__button">
+                    Смотреть ответ
+                </a>
+            </div>
+            <img src="img/question-img.png" alt="" class="question-img">
+        </div>
+    </div>
+</div>
         </section>
 
         <section class="about">
@@ -455,16 +827,20 @@
             <div class="container">
                 <div class="about__text">
                     <div class="about__text_l">
-                        Фрезениус Каби является частью немецкого концерна Фрезениус — мирового лидера в создании средств для
-                        оказания медицинской помощи больным в критических состояниях как в госпитальных, так и в домашних
+                        Фрезениус Каби является частью немецкого концерна Фрезениус — мирового лидера в создании средств
+                        для
+                        оказания медицинской помощи больным в критических состояниях как в госпитальных, так и в
+                        домашних
                         условиях.
-                        Основными направлениями деятельности Фрезениус Каби являются разработка и производство препаратов и
+                        Основными направлениями деятельности Фрезениус Каби являются разработка и производство
+                        препаратов и
                         технологий для инфузионной терапии, парентерального и энтерального питания, химиотерапевтических
                         препаратов и других препаратов для внутривенного введения, а также их медико-технического
                         обеспечения.
                     </div>
                     <div class="about__text_r">
-                        Являясь неотъемлемой частью концерна Фрезениус, Фрезениус Каби занимает лидирующую позицию в Европе
+                        Являясь неотъемлемой частью концерна Фрезениус, Фрезениус Каби занимает лидирующую позицию в
+                        Европе
                         и в мире по производству и продажам препаратов для восполнения объема циркулирующей крови и
                         клинического питания.
                         По данным компании IMS Фрезениус Каби является крупнейшим в мире производителем препаратов для
@@ -472,14 +848,19 @@
                     </div>
                 </div>
                 <div class="center">
-                    <a href="#" class="about__btn">На сайт компании</a>
+                    <a href="https://www.freseniusmedicalcare.ru/ru/glavnaja-stranica" class="about__btn" target="_blank">На сайт компании</a>
                 </div>
             </div>
         </section>
 
+        <a class="lnk_modal-open" data-modalTitle="О компании" data-modalDesc=""
+                    href="https://player.vimeo.com/video/555118922?h=ef811f6360"
+                    data-modal="https://player.vimeo.com/video/555118922?h=ef811f6360">
         <section class="mechanics">
+            <div class="mechanics__heading">О компании</div>
             <img src="img/big-vid-img.jpg" alt="" class="mechanics-img" />
         </section>
+        </a>
 
     </main>
     <footer>
@@ -501,9 +882,12 @@
                         <a href="#lectures" class="footer-top__link">Видео-лекции</a>
                     </li>
                     <li>
-                        <a href="#qna" class="footer-top__link">Вопрос-ответ</a>
+                        <a href="#qna-section" class="footer-top__link">Вопрос-ответ</a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-top__up" id="top-btn-1">
+                НАВЕРХ <img src="img/arrow-up.svg" class="up-img" />
             </div>
         </div>
         <div class="footer-bottom">
@@ -514,8 +898,8 @@
                 E-mail: ru-mow-info@fresenius-kabi.com<br>
                 www.fresenius-kabi.ru
             </div>
-            <div class="footer-bottom__up">
-                Наверх <img src="img/arrow-up.svg" class="up-img" />
+            <div class="footer-bottom__up" id="top-btn-2">
+                НАВЕРХ <img src="img/arrow-up.svg" class="up-img" />
             </div>
         </div>
     </div>
