@@ -293,10 +293,20 @@ nav {
         @media (max-width: 1120px) {
             padding: 13px 26px;
         }
+        @media (max-width: 370px) {
+            padding: 10px 13px;
+        }
     }
 
     .blue-btn {
         margin-right: 30px;
+        @media (max-width: 370px) {
+            margin-right: 10px;
+        }
+        @media (max-width: 295px) {
+            margin-bottom: 5px;
+            margin-right: 0px;
+        }
     }
 }
 
@@ -339,7 +349,17 @@ nav {
         position: absolute;
         right: 0px;
         top: 112%;
+        @media (max-width: 1340px) {
+            width: 27%;
+            top: 123%;
+        }
         @media (max-width: 1120px) {
+            top: 120%;
+        }
+        @media (max-width: 768px) {
+            top: 75%;
+        }
+        @media(max-width: 550px) {
             display: none;
         }
     }
@@ -401,27 +421,51 @@ nav {
     background-position: bottom;
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-position-y: 10px;
+    background-position-y: 0px;
     margin-top: 64px;
     padding-top: 250px;
+
+    .flask-mobile {
+        display: none;
+        text-align: center;
+        margin-top: 15px;
+        position: relative;
+        @media(max-width: 1120px) {
+            display: block;
+            .flask-img {
+                width: 165px;
+            }
+        }
+    }
+
+    @media (max-width: 1120px) {
+        background-position-x: 66%;
+        .flask-desktop {
+            display: none;
+        }
+    }
 
     .open-3d {
         cursor: pointer;
         position: relative;
         left: 250px;
-        top: 250px;
-        transform: translate(67%, 10%);
+        bottom: 250px;
+        
 
-        @media (max-width: 1450px) {
-            transform: translate(25%, 10%);
+        @media (max-width: 1120px) {
+            width: 60px;
+            height: 60px;
+            left: 50%;
+            top: 146px;
+            transform: translate(-26px, 10px);
+            display: block;
         }
     }
 
     @media (max-width: 1120px) {
         padding-top: 60px;
-        .flask-img {
-            display: none;
-        }
+
+ 
     }
 
     &__heading {
@@ -452,6 +496,9 @@ nav {
 
 .release-block {
     margin-left: 40px;
+    @media (max-width: 1120px) {
+        margin-left: 0;
+    }
 }
 
 .release-points {
@@ -566,10 +613,14 @@ nav {
         @extend %heading;
         color: #ffffff;
         position: absolute;
-        left: 49%;
+        left: 50%;
         top: 20%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        @media (max-width: 360px) {
+            left: 37%;
+            transform: translate(-25%,-50%);
+        }
     }
 
     &::after {
@@ -618,8 +669,13 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    padding-bottom: 175px;
-    background-position-x: 34%;
+    padding-bottom: 250px;
+    background-position-y: 100%;
+
+    @media (max-width: 768px) {
+        padding-bottom: 115px;
+        background-position-x: 30%;
+    }
 
     &__heading {
         @extend %heading;
@@ -635,7 +691,7 @@ nav {
 
     &__blocks {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         @media (max-width: 1120px) {
             display: block;
@@ -703,6 +759,7 @@ nav {
     &__heading {
         @extend %akrobat;
         @extend %subheading;
+        max-width: 210px;
     }
 
     &__more {
@@ -723,6 +780,7 @@ nav {
     &__text {
         @extend %textBasic;
         margin-top: 45px;
+        max-width: 700px;
         @media (max-width: 1120px) {
             margin-top: 20px;
             font-size: 14px;
@@ -751,7 +809,6 @@ nav {
 }
 
 .qna-card {
-  padding: 66px;
   position: sticky;
   background: #F8F9FB;
   box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
@@ -760,8 +817,18 @@ nav {
   border-radius: 10px;
   margin-bottom: 20px;
   display: flex;
+  justify-content: space-around;
   height: 65vh;
   overflow: hidden;
+  width: 100%;
+  max-height: 550px;
+
+  &__block {
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+  }
 
   &__heading {
     @extend %subheading;
@@ -781,7 +848,8 @@ nav {
 
   &__text {
     font-family: Open-Sans, sans-serif;
-    @media (max-width: 1120px) {
+    font-size: 20px;
+    @media (max-width: 768px) {
         font-size: 14px;
     }
   }
@@ -798,6 +866,8 @@ nav {
 }
 
 .question-img {
+    // width: 50%;
+    // height: auto;
     @media (max-width: 768px) {
         display: none;
     }
@@ -807,33 +877,34 @@ nav {
     bottom: 18vh;
     z-index: 5;
     margin-top: -15vh;
-    margin-bottom: 9vh;
+    margin-bottom: 13vh;
 }
 
 .qna-2 {
-    bottom: 12vh;
+    bottom: 21vh;
     z-index: 4;
-    margin-top: -7vh;
-    margin-bottom: 2vh;
+    margin-top: -12vh;
+    margin-bottom: 9vh;
 }
 .qna-3 {
-    bottom: 5vh;
+    bottom: 18vh;
     z-index: 3;
-    margin-top: 0vh;
+    margin-top: -9vh;
+    margin-bottom: 5vh;
 }
 
 .qna-4 {
-    bottom: 0vh;
+    bottom: 15vh;
     z-index: 2;
-    margin-top: 2vh;
-    margin-bottom: 9vh;
+    margin-top: -6vh;
+    margin-bottom: 4vh;
 }
 
 .qna-5 {
-    bottom: -5vh;
+    bottom: 12vh;
     z-index: 1;
-    margin-top: -6vh;
-    margin-bottom: 9vh;
+    margin-top: -3vh;
+    margin-bottom: 8vh;
 }
 
 /* Конец карточек Q&A */

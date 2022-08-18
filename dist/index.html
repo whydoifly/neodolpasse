@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220818145946">
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220818145946"
 />
     <title>Главная</title>
 </head>
@@ -19,19 +19,19 @@
         <nav>
             <ul class="header-menu">
                 <li>
-                    <a href="#articles">Статьи</a>
+                    <a href="/#articles">Статьи</a>
                 </li>
                 <li>
-                    <a href="#researches">Исследования</a>
+                    <a href="/#researches">Исследования</a>
                 </li>
                 <li>
-                    <a href="#clinical-analysis">Клинические разборы</a>
+                    <a href="/#clinical-analysis">Клинические разборы</a>
                 </li>
                 <li>
-                    <a href="#lectures">Видео-лекции</a>
+                    <a href="/#lectures">Видео-лекции</a>
                 </li>
                 <li>
-                    <a href="#qna-section">Вопрос-ответ</a>
+                    <a href="/#qna-section">Вопрос-ответ</a>
                 </li>
             </ul>
         </nav>
@@ -111,21 +111,26 @@
                     </div>
                 </div>
             </div>
-            <img src="img/balloon-bg.png" alt="" class="balloon-img">
+            <picture><source srcset="img/balloon-bg.webp" type="image/webp"><img src="img/balloon-bg.png" alt="" class="balloon-img"></picture>
         </section>
 
         <section class="release">
             <div class="container">
-                <a class="lnk_modal-open" data-modalTitle="3d-модель Раствора Неодолпассе" data-modalDesc=""
+                <a class="lnk_modal-open flask-desktop" data-modalTitle="3d-модель Раствора Неодолпассе" data-modalDesc=""
                     href="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed"
                     data-modal="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed">
-                    <img src="img/3d-icon.svg" alt="" class="open-3d">
-                    
+                    <img src="img/3d-icon.svg" alt="" class="open-3d">  
+                    <picture><source srcset="img/flask.webp" type="image/webp"><img src="img/flask.png" alt="препарат 3D" class="flask-img"></picture>
                 </a>
-                <img src="img/flask.png" alt="препарат 3D" class="flask-img">
                 <div class="release-block">
                     <div class="release__heading">Форма выпуска</div>
-                    <div class="release__subheading">Раствор для инфузий диклофенак 75 мг и орфенадрин 30 мг</div>
+                    <div class="release__subheading">Раствор для инфузий диклофенак 75 мг<br> и орфенадрин 30 мг</div>
+                    <a class="lnk_modal-open flask-mobile" data-modalTitle="3d-модель Раствора Неодолпассе" data-modalDesc=""
+                    href="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed"
+                    data-modal="https://sketchfab.com/models/12e9f1742c534a32b2a0f37abe836c2f/embed">
+                    <img src="img/3d-icon.svg" alt="" class="open-3d">  
+                    <picture><source srcset="img/flask.webp" type="image/webp"><img src="img/flask.png" alt="препарат 3D" class="flask-img"></picture>
+                    </a>
                     <div class="release-points">
                         <div class="release-point">
                             <img src="img/blue-checkmark.svg" alt="" class="release-point__img">
@@ -159,7 +164,7 @@
         <section class="mechanics">
             
             <div class="mechanics__heading">Механизм действия</div>
-            <img src="img/mechanics-img.jpg" alt="" class="mechanics-img" />
+            <picture><source srcset="img/mechanics-img.webp" type="image/webp"><img src="img/mechanics-img.jpg" alt="" class="mechanics-img" /></picture>
             
         </section>
         </a>
@@ -351,52 +356,58 @@
     <div class="slider-top__heading">
         Статьи
     </div>
-    <a href="#" class="slider-top__more">Смотреть все разборы <img src="img/arrow-more.svg" alt=""></a>
+    <a href="/to-read.html" class="slider-top__more">Смотреть все разборы <img src="img/arrow-more.svg" alt=""></a>
 </div>
 <div class="swiper articles-swiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide article-slide">
             <div class="article-slide__top">
-                <img src="img/article-img-1.jpg" alt="" class="article-slide__img">
-                <div class="article-slide__desc">Международный опыт использования НЕОДОЛПАССЕ </div>
-                <div class="article-slide__authors">Г. Р. Абузарова, Р. Р. Сарманаева, С. В. Кузнецов, Н. М. Бычкова, Ю. В.
-                    Бражникова</div>
+                <picture><source srcset="img/article-img-1.webp" type="image/webp"><img src="img/article-img-1.jpg" alt="" class="article-slide__img"></picture>
+                <div class="article-slide__desc">Эффективность и безопасность использования фиксированной комбинации орфенадрина и диклофенака для послеоперационной аналгезии у кардиохирургических больных</div>
+                <div class="article-slide__authors">Л. С. Сорокина, Д. В. Рябова, Е. А. Кошек, А. А. Еременко</div>
             </div>
             <div class="article-slide__bottom">
-                <div class="article-slide__button">Подробнее</div>
+                <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article7.pdf" target="_blank" class="article-slide__button">Подробнее</a>
             </div>
         </div>
         <div class="swiper-slide article-slide">
             <div class="article-slide__top">
-                <img src="img/article-img-2.jpg" alt="" class="article-slide__img">
-                <div class="article-slide__desc">Сравнение миорелаксантов и пути их введения</div>
-                <div class="article-slide__authors">М. Л. Кукушкин, А. В. Амелин, С. К. Зырянов, В. А. Балязин, В. А.
-                    Широков, Л. А. Медведева</div>
+                <picture><source srcset="img/article-img-2.webp" type="image/webp"><img src="img/article-img-2.jpg" alt="" class="article-slide__img"></picture>
+                <div class="article-slide__desc">Эффективность комбинации диклофенака и орфенадрина в терапии дорсалгии</div>
+                <div class="article-slide__authors">С. К. Зырянов, О. И. Бутранова, Г. А. Пуцман</div>
             </div>
             <div class="article-slide__bottom">
-                <div class="article-slide__button">Подробнее</div>
+                <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article3.pdf" target="_blank" class="article-slide__button">Подробнее</a>
             </div>
-
         </div>
         <div class="swiper-slide article-slide">
             <div class="article-slide__top">
-                <img src="img/article-img-3.jpg" alt="" class="article-slide__img">
-                <div class="article-slide__desc">Промежуточные результаты Российского исследования </div>
+                <picture><source srcset="img/article-img-3.webp" type="image/webp"><img src="img/article-img-3.jpg" alt="" class="article-slide__img"></picture>
+                <div class="article-slide__desc">Новые возможности терапии синдрома грушевидной мышцы</div>
                 <div class="article-slide__authors">О. В. Курушина, А. Е. Барулин</div>
             </div>
             <div class="article-slide__bottom">
-                <div class="article-slide__button">Подробнее</div>
+                <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article4.pdf" target="_blank" class="article-slide__button">Подробнее</a>
             </div>
         </div>
         <div class="swiper-slide article-slide">
             <div class="article-slide__top">
-                <img src="img/article-img-2.jpg" alt="" class="article-slide__img">
-                <div class="article-slide__desc">Сравнение миорелаксантов и пути их введения</div>
-                <div class="article-slide__authors">М. Л. Кукушкин, А. В. Амелин, С. К. Зырянов, В. А. Балязин, В. А.
-                    Широков, Л. А. Медведева</div>
+                <picture><source srcset="img/article-img-2.webp" type="image/webp"><img src="img/article-img-2.jpg" alt="" class="article-slide__img"></picture>
+                <div class="article-slide__desc">Клинический опыт применения фиксированной комбинации диклофенака и орфенадрина в терапии острого болевого синдрома</div>
+                <div class="article-slide__authors">А. В. Амелин, Н. М. Терещенко, А. А. Готовчиков</div>
             </div>
             <div class="article-slide__bottom">
-                <div class="article-slide__button">Подробнее</div>
+                <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article5.pdf"  target="_blank" class="article-slide__button">Подробнее</a>
+            </div>
+        </div>
+        <div class="swiper-slide article-slide">
+            <div class="article-slide__top">
+                <picture><source srcset="img/article-img-3.webp" type="image/webp"><img src="img/article-img-3.jpg" alt="" class="article-slide__img"></picture>
+                <div class="article-slide__desc">Резолюция совета экспертов</div>
+                <div class="article-slide__authors">М. Л. Кукушкин, А. В. Амелин, С. К. Зырянов, В. А. Балязин, В. А. Широков, Л. А. Медведева, Л. Р. Ахмадеева, О. В. Курушина, Д. В. Киселев, Г. Р. Абузарова, О. С. Давыдов</div>
+            </div>
+            <div class="article-slide__bottom">
+                <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article5.pdf"  target="_blank" class="article-slide__button">Подробнее</a>
             </div>
         </div>
     </div>
@@ -404,24 +415,22 @@
 <div class="mobile-slider">
     <div class="mobile-slide article-slide">
         <div class="article-slide__top">
-            <img src="img/article-img-1.jpg" alt="" class="article-slide__img">
-            <div class="article-slide__desc">Международный опыт использования НЕОДОЛПАССЕ </div>
-            <div class="article-slide__authors">Г. Р. Абузарова, Р. Р. Сарманаева, С. В. Кузнецов, Н. М. Бычкова, Ю. В.
-                Бражникова</div>
+            <picture><source srcset="img/article-img-2.webp" type="image/webp"><img src="img/article-img-2.jpg" alt="" class="article-slide__img"></picture>
+            <div class="article-slide__desc">Эффективность и безопасность использования фиксированной комбинации орфенадрина и диклофенака для послеоперационной аналгезии у кардиохирургических больных</div>
+            <div class="article-slide__authors">Л. С. Сорокина, Д. В. Рябова, Е. А. Кошек, А. А. Еременко</div>
         </div>
         <div class="article-slide__bottom">
-            <div class="article-slide__button">Подробнее</div>
+            <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article7.pdf" target="_blank" class="article-slide__button">Подробнее</a>
         </div>
     </div>
-    <div class="mobile-slide article-slide">
+    <div href="" target="_blank" class="mobile-slide article-slide">
         <div class="article-slide__top">
-            <img src="img/article-img-1.jpg" alt="" class="article-slide__img">
-            <div class="article-slide__desc">Международный опыт использования НЕОДОЛПАССЕ </div>
-            <div class="article-slide__authors">Г. Р. Абузарова, Р. Р. Сарманаева, С. В. Кузнецов, Н. М. Бычкова, Ю. В.
-                Бражникова</div>
+            <picture><source srcset="img/article-img-1.webp" type="image/webp"><img src="img/article-img-1.jpg" alt="" class="article-slide__img"></picture>
+            <div class="article-slide__desc">Новые возможности терапии синдрома грушевидной мышцы</div>
+            <div class="article-slide__authors">О. В. Курушина, А. Е. Барулин</div>
         </div>
         <div class="article-slide__bottom">
-            <div class="article-slide__button">Подробнее</div>
+            <a href="https://intermeda.ru/medicines/neodolpasse/articles/neodolpasse_article4.pdf" target="_blank" class="article-slide__button">Подробнее</a>
         </div>
     </div>
 </div>
@@ -440,7 +449,19 @@
 </div>
 <div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
-        <div class="swiper-slide research-slide">
+        <a href="files/Результаты Российского многоцентрового исследования.pdf" download class="swiper-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Яхно Н.Н. и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Российское мультицентровое исследование эффективности
+                    и переносимости Неодолпассе
+                </div>
+            </div>
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a href="files/Результаты исследования в Онкологии.pdf" download class="swiper-slide research-slide">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
                     Г.Р. Абузарова и соавт.
@@ -450,49 +471,36 @@
                     Неодолпассе у онкологических пациентов
                 </div>
             </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a href="files/Исследование эффективности НЕООДОЛПАССЕ при послеоперационной боли.pdf" download class="swiper-slide research-slide">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
+                    А.А. Еременко и соавт.
                 </div>
                 <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
+                    Недолпассе для послеоперационной аналгезии
                 </div>
             </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
-            <div class="research-slide__info">
-                <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
-                </div>
-                <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
-                </div>
-            </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
-            <div class="research-slide__info">
-                <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
-                </div>
-                <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
-                </div>
-            </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
 <div class="mobile-slider">
     <div class="container">
-        <div class="mobile-slide research-slide">
+        <a href="files/Результаты Российского многоцентрового исследования.pdf" download class="mobile-slide research-slide">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Яхно Н.Н. и соавт.
+                </div>
+                <div class="research-slide__desc">
+                    Российское мультицентровое исследование эффективности
+                    и переносимости Неодолпассе
+                </div>
+            </div>
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a href="files/Результаты исследования в Онкологии.pdf" download class="mobile-slide research-slide">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
                     Г.Р. Абузарова и соавт.
@@ -502,20 +510,8 @@
                     Неодолпассе у онкологических пациентов
                 </div>
             </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="mobile-slide research-slide">
-            <div class="research-slide__info">
-                <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
-                </div>
-                <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
-                </div>
-            </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
         </section>
@@ -532,79 +528,76 @@
 </div>
 <div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
-        <div class="swiper-slide research-slide">
+        <a class="swiper-slide research-slide lnk_modal-open"  data-modalTitle="Обезболивание после операции на опорно-двигательном аппарате. Клинические примеры." data-modalDesc=""
+        href="https://player.vimeo.com/video/554238063?h=9b9d217b00"
+        data-modal="https://player.vimeo.com/video/554238063?h=9b9d217b00">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
+                    Беленький И. Г.
+                </div>
+                <div class="research-slide__desc">
+                    Обезболивание после операции на опорно-двигательном аппарате. Клинические примеры.
+                </div>
+            </div>
+            <picture><source srcset="img/clinical-analysis-img.webp" type="image/webp"><img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lnk_modal-open" data-modalTitle="Клинические разборы пациентов с острой радикулярной болью " data-modalDesc=""
+        href="https://player.vimeo.com/video/554234799?h=5fde2e7c4d"
+        data-modal="https://player.vimeo.com/video/554234799?h=5fde2e7c4d">
+            <div class="research-slide__info">
+                <div class="research-slide__authors">
+                    Амелин А. В.
                 </div>
                 <div class="research-slide__desc">
                     Клинические разборы пациентов с острой радикулярной болью 
                 </div>
             </div>
-            <img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
+            <picture><source srcset="img/clinical-analysis-img.webp" type="image/webp"><img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lnk_modal-open" data-modalTitle="Острые боли в шее. Некоторые аспекты диагностики и лечения. Клинический разбор." data-modalDesc=""
+        href="https://player.vimeo.com/video/554236255?h=48e116ce0f"
+        data-modal="https://player.vimeo.com/video/554236255?h=48e116ce0f">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
+                    Киселев Д. В.
                 </div>
                 <div class="research-slide__desc">
-                    Клинические разборы пациентов с острой радикулярной болью 
+                    Острые боли в шее. Некоторые аспекты диагностики и лечения. Клинический разбор.
                 </div>
             </div>
-            <img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
-            <div class="research-slide__info">
-                <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
-                </div>
-                <div class="research-slide__desc">
-                    Клинические разборы пациентов с острой радикулярной болью 
-                </div>
-            </div>
-            <img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide">
-            <div class="research-slide__info">
-                <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
-                </div>
-                <div class="research-slide__desc">
-                    Клинические разборы пациентов с острой радикулярной болью 
-                </div>
-            </div>
-            <img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/clinical-analysis-img.webp" type="image/webp"><img src="img/clinical-analysis-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
 
 <div class="mobile-slider">
     <div class="container">
-        <div class="mobile-slide research-slide">
+        <a class="mobile-slide research-slide lnk_modal-open" data-modalTitle="Обезболивание после операции на опорно-двигательном аппарате. Клинические примеры." data-modalDesc=""
+        href="https://player.vimeo.com/video/554238063?h=9b9d217b00"
+        data-modal="https://player.vimeo.com/video/554238063?h=9b9d217b00">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
+                    Беленький И. Г.
                 </div>
                 <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
+                    Обезболивание после операции на опорно-двигательном аппарате. Клинические примеры.
                 </div>
             </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="mobile-slide research-slide">
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="mobile-slide research-slide lnk_modal-open" data-modalTitle="Клинические разборы пациентов с острой радикулярной болью" data-modalDesc=""
+        href="https://player.vimeo.com/video/554234799?h=5fde2e7c4d"
+        data-modal="https://player.vimeo.com/video/554234799?h=5fde2e7c4d">
             <div class="research-slide__info">
                 <div class="research-slide__authors">
-                    Г.Р. Абузарова и соавт.
+                    Амелин А. В.
                 </div>
                 <div class="research-slide__desc">
-                    Исследование эффективности
-                    Неодолпассе у онкологических пациентов
+                    Клинические разборы пациентов с острой радикулярной болью
                 </div>
             </div>
-            <img src="img/research-img-2.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/research-img-2.webp" type="image/webp"><img src="img/research-img-2.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
         </section>
@@ -621,47 +614,67 @@
 </div>
 <div class="swiper researches-swiper swiper-scale">
     <div class="swiper-wrapper">
-        <div class="swiper-slide research-slide lecture-slide">
+        <a class="swiper-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Новое в неврологии. Быстрое купирование острой боли в спине" data-modalDesc=""
+        href="https://player.vimeo.com/video/554226567?h=f409b3e9ed"
+        data-modal="https://player.vimeo.com/video/554226567?h=f409b3e9ed">
+            <div class="lecture-slide__desc">
+                Новое в неврологии. Быстрое купирование острой боли в спине Амелин А. В.
+            </div>
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Симпозиум. Алгоритмы обезболивания. Протоколы или искусство?" data-modalDesc=""
+        href="https://player.vimeo.com/video/554226992?h=503ddb2483"
+        data-modal="https://player.vimeo.com/video/554226992?h=503ddb2483">
             <div class="lecture-slide__desc">
                 Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
             </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide lecture-slide">
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Роль и место миорелаксантов в лечении неспецифической боли в спине (Доклад)" data-modalDesc=""
+        href="https://player.vimeo.com/video/554238504?h=e1fc59f054"
+        data-modal="https://player.vimeo.com/video/554238504?h=e1fc59f054">
             <div class="lecture-slide__desc">
-                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
+                Роль и место миорелаксантов в лечении неспецифической боли в спине (Доклад) Кукушкин М. Л.
             </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide lecture-slide">
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Как справиться с болью? Острая радикулярная боль в спине. (Доклад)" data-modalDesc=""
+        href="https://player.vimeo.com/video/554238919?h=27fb532d5c"
+        data-modal="https://player.vimeo.com/video/554238919?h=27fb532d5c">
             <div class="lecture-slide__desc">
-                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
+                Как справиться с болью? Острая радикулярная боль в спине. (Доклад) Амелин А. В.
             </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="swiper-slide research-slide lecture-slide">
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="swiper-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Система отсчета — пациент. Лечение боли в условиях вынужденной полипрагмазии" data-modalDesc=""
+        href="https://player.vimeo.com/video/563165472?h=38643f37fa"
+        data-modal="https://player.vimeo.com/video/563165472?h=38643f37fa">
             <div class="lecture-slide__desc">
-                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
+                Система отсчета — пациент. Лечение боли в условиях вынужденной полипрагмазии
             </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
 
 <div class="mobile-slider">
     <div class="container">
-        <div class="mobile-slide research-slide lecture-slide">
+        <a class="mobile-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Новое в неврологии. Быстрое купирование острой боли в спине" data-modalDesc=""
+        href="https://player.vimeo.com/video/554226567?h=f409b3e9ed"
+        data-modal="https://player.vimeo.com/video/554226567?h=f409b3e9ed">
+            <div class="lecture-slide__desc">
+                Новое в неврологии. Быстрое купирование острой боли в спине Амелин А. В.
+            </div>
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
+        <a class="mobile-slide research-slide lecture-slide lnk_modal-open" data-modalTitle="Симпозиум. Алгоритмы обезболивания. Протоколы или искусство?" data-modalDesc=""
+        href="https://player.vimeo.com/video/554226992?h=503ddb2483"
+        data-modal="https://player.vimeo.com/video/554226992?h=503ddb2483">
             <div class="lecture-slide__desc">
                 Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
             </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
-        <div class="mobile-slide research-slide lecture-slide">
-            <div class="lecture-slide__desc">
-                Симпозиум. Алгоритмы обезболивания. Протоколы или искусство? Медведева Л. А., Амелин А. В.
-            </div>
-            <img src="img/lecture-img.jpg" alt="" class="research-slide__img">
-        </div>
+            <picture><source srcset="img/lecture-img.webp" type="image/webp"><img src="img/lecture-img.jpg" alt="" class="research-slide__img"></picture>
+        </a>
     </div>
 </div>
         </section>
@@ -694,17 +707,17 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Отвечает</div>
                         <div class="qna-card__text">
-                            C.К. Зырянов
+                            Зырянов Сергей Кенсаринович
                         </div>
                     </div>
                 </div>
-                <a class="qna-card__button lnk_modal-open" data-modalTitle="" data-modalDesc=""
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="Отвечает Зырянов Сергей Кенсаринович" data-modalDesc=""
                     href="https://player.vimeo.com/video/554240298?h=b8fa89bcc5"
                     data-modal="https://player.vimeo.com/video/554240298?h=b8fa89bcc5">
                     Смотреть ответ
                 </a>
             </div>
-            <img src="img/question-img.png" alt="" class="question-img">
+            <picture><source srcset="img/question-img.webp" type="image/webp"><img src="img/question-img.png" alt="" class="question-img"></picture>
         </div>
         <div class="qna-card qna-2">
             <div class="qna-card__block">
@@ -713,9 +726,7 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Вопрос</div>
                         <div class="qna-card__text">
-                            В последних клинических рекомендациях говорится, что лучше
-                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
-                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                            Можно ли применять Неодолпассе при обострении хронической боли в спине?
                         </div>
                     </div>
                 </div>
@@ -724,15 +735,17 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Отвечает</div>
                         <div class="qna-card__text">
-                            C.К. Зырянов
+                            Кукушкин Михаил Львович
                         </div>
                     </div>
                 </div>
-                <a class="qna-card__button">
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="Отвечает Кукушкин Михаил Львович" data-modalDesc=""
+                    href="https://player.vimeo.com/video/554239780?h=2d1de78b5d"
+                    data-modal="https://player.vimeo.com/video/554239780?h=2d1de78b5d">
                     Смотреть ответ
                 </a>
             </div>
-            <img src="img/question-img.png" alt="" class="question-img">
+            <picture><source srcset="img/question-img.webp" type="image/webp"><img src="img/question-img.png" alt="" class="question-img"></picture>
         </div>
         <div class="qna-card qna-3">
             <div class="qna-card__block">
@@ -741,9 +754,7 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Вопрос</div>
                         <div class="qna-card__text">
-                            В последних клинических рекомендациях говорится, что лучше
-                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
-                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                            Насколько длительными и выраженными будет эффект по сравнению со стандартной комбинированной терапией (какая должна быть основная аргументация при назначении Неодолпассе по ВК)
                         </div>
                     </div>
                 </div>
@@ -752,15 +763,17 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Отвечает</div>
                         <div class="qna-card__text">
-                            C.К. Зырянов
+                            Кукушкин Михаил Львович
                         </div>
                     </div>
                 </div>
-                <a class="qna-card__button">
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="Отвечает Кукушкин Михаил Львович" data-modalDesc=""
+                    href="https://player.vimeo.com/video/554238029?h=c3dd19bb1b"
+                    data-modal="https://player.vimeo.com/video/554238029?h=c3dd19bb1b">
                     Смотреть ответ
                 </a>
             </div>
-            <img src="img/question-img.png" alt="" class="question-img">
+            <picture><source srcset="img/question-img.webp" type="image/webp"><img src="img/question-img.png" alt="" class="question-img"></picture>
         </div>
         <div class="qna-card qna-4">
             <div class="qna-card__block">
@@ -769,9 +782,7 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Вопрос</div>
                         <div class="qna-card__text">
-                            В последних клинических рекомендациях говорится, что лучше
-                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
-                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                            Эффективен ли Неодолпассе при грыже межпозвоночного диска?
                         </div>
                     </div>
                 </div>
@@ -780,15 +791,17 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Отвечает</div>
                         <div class="qna-card__text">
-                            C.К. Зырянов
+                            Медведева Людмила Анатольевна
                         </div>
                     </div>
                 </div>
-                <a class="qna-card__button">
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="Отвечает Медведева Людмила Анатольевна" data-modalDesc=""
+                    href="https://player.vimeo.com/video/554238763?h=ae9876c920"
+                    data-modal="https://player.vimeo.com/video/554238763?h=ae9876c920">
                     Смотреть ответ
                 </a>
             </div>
-            <img src="img/question-img.png" alt="" class="question-img">
+            <picture><source srcset="img/question-img.webp" type="image/webp"><img src="img/question-img.png" alt="" class="question-img"></picture>
         </div>
         <div class="qna-card qna-5">
             <div class="qna-card__block">
@@ -797,9 +810,7 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Вопрос</div>
                         <div class="qna-card__text">
-                            В последних клинических рекомендациях говорится, что лучше
-                            использовать калиевую соль диклофенака. В Неодолпассе натриевая. Насколько это оправдано и
-                            безопасно? Нужно ли учитывать количество натрия, которое пациент получает с инфузией?
+                            Какое АД может быть поводом для отказа для назначения Неодолпассе
                         </div>
                     </div>
                 </div>
@@ -808,15 +819,17 @@
                     <div class="qna-card__info_block">
                         <div class="qna-card__heading">Отвечает</div>
                         <div class="qna-card__text">
-                            C.К. Зырянов
+                            Амелин Александр Витальевич
                         </div>
                     </div>
                 </div>
-                <a class="qna-card__button">
+                <a class="qna-card__button lnk_modal-open" data-modalTitle="Отвечает Амелин Александр Витальевич" data-modalDesc=""
+                    href="https://player.vimeo.com/video/554238296?h=c3bb8ebefd"
+                    data-modal="https://player.vimeo.com/video/554238296?h=c3bb8ebefd">
                     Смотреть ответ
                 </a>
             </div>
-            <img src="img/question-img.png" alt="" class="question-img">
+            <picture><source srcset="img/question-img.webp" type="image/webp"><img src="img/question-img.png" alt="" class="question-img"></picture>
         </div>
     </div>
 </div>
@@ -858,7 +871,7 @@
                     data-modal="https://player.vimeo.com/video/555118922?h=ef811f6360">
         <section class="mechanics">
             <div class="mechanics__heading">О компании</div>
-            <img src="img/big-vid-img.jpg" alt="" class="mechanics-img" />
+            <picture><source srcset="img/big-vid-img.webp" type="image/webp"><img src="img/big-vid-img.jpg" alt="" class="mechanics-img" /></picture>
         </section>
         </a>
 
@@ -904,7 +917,7 @@
         </div>
     </div>
 </footer>
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20220818145946"></script>
 </body>
 
 </html>
