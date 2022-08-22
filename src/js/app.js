@@ -4,7 +4,7 @@ import * as modalLoader from './modules/modal.js';
 allFunctions.isWebp();
 modalLoader.modalLoader();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
 
 const swiperArticles = new Swiper('.articles-swiper', {
   slidesPerView: 3,
@@ -86,16 +86,16 @@ function topFunction() {
 }
 
 // Модальное окно с подтверждением специалиста здравоохранения
-document.addEventListener('DOMContentLoaded', () => {
-  let modal = document.querySelector('.modal-spec');
-  let confirmModalBtn = document.querySelector('.modal-spec__confirm-btn');
-  let darkenBg = document.querySelector('.darken-bg');
+// document.addEventListener('DOMContentLoaded', () => {
+//   let modal = document.querySelector('.modal-spec');
+//   let confirmModalBtn = document.querySelector('.modal-spec__confirm-btn');
+//   let darkenBg = document.querySelector('.darken-bg');
 
-  modal.classList.add('show');
-  darkenBg.classList.add('show');
+//   modal.classList.add('show');
+//   darkenBg.classList.add('show');
 
-  confirmModalBtn.addEventListener('click', () => {
-    modal.classList.remove('show');
-    darkenBg.classList.remove('show');
-  });
-});
+//   confirmModalBtn.addEventListener('click', () => {
+//     modal.classList.remove('show');
+//     darkenBg.classList.remove('show');
+//   });
+// });

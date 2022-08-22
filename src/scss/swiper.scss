@@ -78,6 +78,10 @@ $textBlack: #00203d;
     }
 }
 
+.back-to-main img {
+    transform: rotate(180deg);
+}
+
 .articles-swiper {
     @media (max-width: 1120px) {
         display: none;
