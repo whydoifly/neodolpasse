@@ -237,12 +237,10 @@ $textBlack: #00203d;
 
     &__desc {
         position: absolute;
-        left: 50%;
-        bottom: 10%;
-        transform: translate(-50%,-50%);
+        left: 8%;
+        bottom: 7%;
         font-weight: 800;
         z-index: 5;
-        min-width: 420px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -252,7 +250,6 @@ $textBlack: #00203d;
         @media (max-width: 1120px) {
             min-width: 250px;
             font-size: 14px;
-            transform: translate(-50%, 0%);
             font-weight: 600;
         }
     }

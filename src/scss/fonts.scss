@@ -8,29 +8,22 @@
 @font-face {
 	font-family: Akrobat;
 	font-display: swap;
+	src: url("../fonts/Akrobat-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-ExtraBold.ttf") format("ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
 	src: url("../fonts/Akrobat-ExtraLight.ttf") format("ttf");
 	font-weight: 200;
-	font-style: normal;
-}
-@font-face {
-	font-family: Akrobat;
-	font-display: swap;
-	src: url("../fonts/Akrobat-Light.ttf") format("ttf");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: Akrobat;
-	font-display: swap;
-	src: url("../fonts/Akrobat-Regular.ttf") format("ttf");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: Akrobat;
-	font-display: swap;
-	src: url("../fonts/Akrobat-SemiBold.ttf") format("ttf");
-	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
@@ -50,14 +43,14 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Italic.ttf") format("ttf");
+	src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-BoldItalic.ttf") format("ttf");
+	src: url("../fonts/OpenSans-Italic.ttf") format("ttf");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -85,14 +78,14 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+	src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-MediumItalic.ttf") format("ttf");
+	src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -113,14 +106,21 @@
 @font-face {
 	font-family: Akrobat;
 	font-display: swap;
-	src: url("../fonts/Akrobat-ExtraBold.ttf") format("ttf");
-	font-weight: 800;
+	src: url("../fonts/Akrobat-Light.ttf") format("ttf");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: Akrobat;
 	font-display: swap;
-	src: url("../fonts/Akrobat-Bold.ttf") format("ttf");
-	font-weight: 700;
+	src: url("../fonts/Akrobat-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Akrobat;
+	font-display: swap;
+	src: url("../fonts/Akrobat-SemiBold.ttf") format("ttf");
+	font-weight: 600;
 	font-style: normal;
 }

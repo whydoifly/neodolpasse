@@ -1,5 +1,3 @@
-$default: #0063BE;
-$hover: #2596be;
 /* Modal opening object (link, button, or pretend button) */
 
 button,
@@ -48,8 +46,6 @@ button[data-modal][aria-controls]:focus,
 .modal {
   max-width: 80vw;
   max-height: 90vh;
-  padding: 92px 60px;
-  background-color: #FFFFFF;
   margin: 0 auto;
   position: absolute;
   left: 10%;
@@ -57,18 +53,13 @@ button[data-modal][aria-controls]:focus,
   top: 5%;
   bottom: 5%;
   z-index: 10;
-  box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
+  // box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
   transition: opacity .5s ease-out, visibility 0s ease-out 1s, transform .5s ease-out .5s;
   backface-visibility: hidden;
   opacity: 0;
   visibility: hidden;
   transform: scale(.8) translate3d(0,0,0);
   pointer-events: none;
-  @media (max-width: 1120px) {
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-  }
 }
 
 .modal[aria-hidden="false"] {
@@ -120,16 +111,48 @@ button[data-modal][aria-controls]:focus,
 
 .modal_title,
 .modal_desc {
-  position: absolute;
+  // position: absolute;
   top: 5px;
   left: -200em;
   color: #000;
-  font-size: 20px;
+  font-size: 27px;
   padding: 0.125em .25em;
   /* Tesco requirement
   font-family: Tesco_W_Rg, sans-serif; */
-  margin: 0;
+  margin-bottom: 25px;
   text-align: center;
+  display: none;
+}
+
+#modal_0_title,
+#modal_1_title {
+  display: block;
+  font-family: Akrobat, Arial;
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
+}
+
+#modal_0 {
+  padding: 30px 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
+  @media (max-width: 1120px) {
+    padding: 15px 30px;
+    bottom: auto;
+  }
+}
+
+#modal_1 {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 24px -11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#modal_1 iframe {
+  height: 85%;
 }
 
 .modal_title:focus,
@@ -139,7 +162,7 @@ button[data-modal][aria-controls]:focus,
 
 [aria-hidden="false"] .modal_title {
   transition: opacity .5s ease-out 3s;
-  opacity: 0;
+  // opacity: 0;
 }
 
 .modal_title,
@@ -181,25 +204,43 @@ button[data-modal][aria-controls]:focus,
 .modal_lnk-close {
   cursor: pointer;
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 0;
+  right: -37px;
   border: 0 solid;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: $default;
-  box-shadow: 0 .25em .5em rgba(0, 0, 0, .25);
   overflow: hidden;
   transition: background-color .3s ease-out;
-  @media (max-width: 1120px) {
+  @media (min-width: 300px) {
+    top: 33%;
+  }
+  @media (min-width: 400px) {
+    top: 28%;
+  }
+  @media (min-width: 500px) {
+    top: 25%;
+  }
+  @media (min-width: 600px) {
+    top: 22%;
+  }
+  @media (min-width: 700px) {
     top: 20%;
+  }
+  @media (min-width: 800px) {
+    top: 18%;
+  }
+  @media (min-width: 900px) {
+    top: 16%;
+  }
+  @media (min-width: 1000px) {
+    top: 0;
+    right: -50px;
   }
 }
 
 .modal_lnk-close:hover,
 .modal_lnk-close:active,
 .modal_lnk-close:focus {
-  background-color: $hover;
   outline: 0 solid;
 }
 

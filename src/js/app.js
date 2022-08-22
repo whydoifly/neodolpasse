@@ -84,3 +84,18 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Модальное окно с подтверждением специалиста здравоохранения
+document.addEventListener('DOMContentLoaded', () => {
+  let modal = document.querySelector('.modal-spec');
+  let confirmModalBtn = document.querySelector('.modal-spec__confirm-btn');
+  let darkenBg = document.querySelector('.darken-bg');
+
+  modal.classList.add('show');
+  darkenBg.classList.add('show');
+
+  confirmModalBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+    darkenBg.classList.remove('show');
+  });
+});
