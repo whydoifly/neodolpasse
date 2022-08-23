@@ -28,6 +28,8 @@ export const path = {
     html: `${srcFolder}/**/*.html`, // .pug для pug
     images: `${srcFolder}/img/**/*.{jpg,jpeg,svg,ico,png,gif,webp}`,
     files: `${srcFolder}/files/**/*.*`,
+    toRead: `${srcFolder}/to-read/**/*.*`,
+    toWatch: `${srcFolder}/to-watch/**/*.*`,
   },
   clean: buildFolder,
   buildFolder: buildFolder,
